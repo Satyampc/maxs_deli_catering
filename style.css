@@ -1,0 +1,250 @@
+/* body { */
+  /* background: url(./img/html.gif);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; */
+/* }  */
+.active {
+  margin-top: 5px;
+}
+.container-fluid .text-center {
+  transform: translate(-50%);
+  margin-left: 50%;
+}
+#abtMe {
+  scroll-behavior: smooth;
+}
+
+.img-resp {
+  max-width: 250px;
+  max-height: 250px;
+}
+p .fName,
+.success {
+  font-family: fantasy;
+  color: rgb(48, 44, 44);
+}
+.success {
+  color: rgb(83, 83, 199);
+}
+.intro {
+  font-family: fantasy;
+  font-size: 20px;
+}
+.nam {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.menuList {
+  font-family: fantasy;
+  text-decoration: underline;
+}
+.jumbotron {
+  background-image: url("./img/HOT SANDWICHES.jpg"); /* Removed backslash */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Try 400–600px or set dynamically */
+  width: 100%;
+}
+
+.myProfImg {
+  border-radius: 250px;
+  width: 250;
+  height: 250px;
+}
+
+footer {
+  padding: 25px;
+}
+
+.footer-container {
+  border-radius: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6f7c83;
+}
+
+.footer-container a {
+  color: #191f25;
+  display: flex;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &:hover {
+    color: #dbd8eb;
+  }
+}
+
+.footer-container ul {
+  display: flex;
+  padding: 0;
+  gap: 24px;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#copyright {
+  text-align: center;
+  color: #0b0f11;
+  background-color: #dcf0c2;
+}
+
+.snav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.snav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.snav a:hover {
+  color: #f1f1f1;
+}
+
+.snav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .snav {
+    padding-top: 15px;
+  }
+  .snav a {
+    font-size: 18px;
+  }
+}
+
+#beat {
+  border-radius: 50%;
+  background-color: red;
+  margin-left: auto;
+  width: 500px;
+  height: 500px;
+  animation: heartbeat 1s infinite;
+}
+
+.heart {
+  font-family: fantasy;
+  padding-top: 300px;
+}
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.fa-home {
+  color: #333;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.catering-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px; /* Adjust height as needed */
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff; /* Text color */
+  background-color: #d9230f; /* Optional background color */
+}
+
+.specials-container {
+  max-width: 700px;
+  margin: 100px auto 50px;
+  text-align: center;
+}
+
+.special-item {
+  margin-bottom: 2rem;
+}
+
+.special-name {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.special-description {
+  font-style: italic;
+  color: #555;
+}
+
+.special-price {
+  margin-top: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+.addItems{
+  color: red;
+}
+.pages {
+  padding: 10px;
+  background-color: green;
+  color: #fff;
+  animation: fadeout 3s linear 1 forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
