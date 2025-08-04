@@ -22,20 +22,25 @@
    <!-- Navbar -->
    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Max’s Deli</a>
-
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
+        <i>Max’s Delicatessen</i>
+      </a>
+  
+      <!-- Hamburger / Toggler Button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
         aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
+  
+      <!-- Collapsible Menu -->
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i></a>
+            <a class="nav-link active" aria-current="page" href="./menus.html">Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./menus.html">Menu</a>
+            <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Catering</a>
@@ -44,6 +49,9 @@
             <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
           </li>
         </ul>
+        <a href="#orderForm" class="btn btn-danger d-flex align-items-center">
+          <i class="bi bi-bag-fill "></i> Order Now
+        </a>
       </div>
     </div>
   </nav>
@@ -71,6 +79,26 @@
     </div>
   </div>
 
+    <!-- FORM -->
+    <form id="orderForm" action="https://formspree.io/f/xjkoezpz" method="POST" class="p-4 border rounded" style="max-width: 500px; margin: auto;">
+      <h5 class="text-center mb-3">Send Us Your Order</h5>
+      
+      <div class="mb-3">
+        <label for="phone" class="form-label">Your Phone Number</label>
+        <input type="tel" name="phone" id="phone" class="form-control" required pattern="[0-9]{10}" placeholder="1234567890">
+      </div>
+    
+      <div class="mb-3">
+        <label for="message" class="form-label">Please Type Your Order (online ordering coming soon!!)</label>
+        <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+        <small class="form-text text-muted">
+          When placing your order, please include any special instructions like: Salt/Pepper, Ketchup, Lettuce/Tomato/Mayo, etc.
+        </small>
+      </div>
+    
+      <button type="submit" class="btn btn-primary w-100">Send</button>
+    </form>
+
   <!-- Google Map -->
   <div class="container text-center mb-5">
     <iframe
@@ -78,22 +106,43 @@
       id="map" width="70%" height="350" style="border: 1px solid black" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
-
+  
   <!-- Footer -->
-  <footer class="container-fluid text-center">
-    <div class="footer-container">
-      <p>Let's get connected</p>
-      <ul class="list-inline">
-        <li class="list-inline-item">
-          <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-        </li>
-        <li class="list-inline-item">
-          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube fa-2x"></i></a>
-        </li>
-      </ul>
-      <p class="fontSty">themaxsdeli@gmail.com</p>
+  <footer class="bg-light text-dark py-4 mt-5 border-top">
+    <div class="container text-center">
+      <h5 class="mb-3">Let’s Get Connected</h5>
+  
+      <div class="mb-3">
+        <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank" class="text-dark mx-2">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="text-dark mx-2">
+          <i class="fab fa-youtube-square fa-2x"></i>
+        </a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-envelope me-2"></i>
+        <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-phone me-2"></i>
+        <a href="tel:+19735551234" class="text-dark text-decoration-none">+1(973)-694-3163</a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-fax me-2"></i>
+       
+      </div>
+  
+      <div class="mb-3">
+        <i class="fas fa-map-marker-alt me-2"></i>
+        1484 RT-23, Wayne, NJ 07470
+      </div>
+  
+      <p class="small mb-0 text-muted">© 2025 Max’s Deli | Built by Sam C.</p>
     </div>
-    <p>2025 &copy; by Sam C.</p>
   </footer>
 </body>
 

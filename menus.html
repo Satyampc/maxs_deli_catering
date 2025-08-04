@@ -10,19 +10,19 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/863a30ca91.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap 5 JS (for navbar toggler) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+  <!-- Bootstrap 5 Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Max’s Deli</a>
-  
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
+        <i>Max’s Delicatessen</i>
+      </a>
+
       <!-- Hamburger / Toggler Button -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
         aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,11 +45,15 @@
             <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
           </li>
         </ul>
+        <a href="#orderForm" class="btn btn-danger d-flex align-items-center">
+          <i class="bi bi-bag-fill "></i> Order Now
+        </a>
       </div>
     </div>
   </nav>
 
-  <div class="jumbotron">
+  <!-- jumbotron -->
+  <div class="jumbotron test">
   </div>
   <hr />
   <div class="container-fluid text-center">
@@ -58,6 +62,8 @@
   <div class="container-fluid text-center">
     <h3 class="nam">Menu</h3>
     <br />
+
+    <!-- Cold Sandwiches -->
     <div class="row">
       <div class="col-sm-4">
         <p class="menuList">Cold Sandwiches</p>
@@ -83,15 +89,6 @@
           <li><span>Egg Salad</span><span>$8.99</span></li>
           <li><span>Tuna Salad</span><span>$9.49</span></li>
           <li><span>Chicken Salad</span><span>$9.49</span></li>
-          <strong>
-            Sloppy Joe
-          </strong><li><span><i>Triple-Decker Turkey, Roast Beef, Cole Slaw and Russian Dressing
-            Lettuce.</i>
-          <br>
-          <strong><i>Sloppy Joe - $17.99</i></strong>
-          <br>
-          <strong><i>Sloppy Joe Jr. - $13.99</i></strong>
-        </span></li>
         </ul>
   
         <div class="addItems"><strong><i> Tomato, Onion, Hot Peppers add $.25 each
@@ -100,6 +97,7 @@
           All Sandwiches are Available Child Size for $1.00 less</i></strong></div>
       </div>
 
+      <!-- Hot Sandwiches -->
       <div class="col-sm-4">
         <p class="menuList">Hot Sandwiches</p>
         <img src="./img/HOT SANDWICHES.jpg" class="img-resp" alt="hot sandwich" />
@@ -226,8 +224,9 @@
       <h3 class="nam">Max's Original</h3>
       <div class="col-sm-4">
         <p class="fewThings">Torpedo</p>
-        <img src="./img/torpedp.jpg" class="img-resp" alt="skill" />
-        <p><span><i></i> HAM, HOT HAM, SALAMI, PROVOLONE, LETTUCE, TOMATO, ONIONS. ON MAO...</i>
+        <img src="./img/torpedp.jpg" class="img-resp" alt="splSandwich" />
+        <br>
+        <p><span><i></i> HAM, HOT HAM, SALAMI, PROVOLONE, LETTUCE, TOMATO, ONIONS, Oil & Viniger or MAYO...</i>
           <br>
           <strong><i>Reg - $9.49</i></strong>
           <br>
@@ -236,15 +235,66 @@
       </div>
       <div class="col-sm-4">
         <p class="fewThings">Landmine</p>
-        <img src="./img/landmine.jpg" class="img-resp" alt="leader" />
+        <img src="./img/landmine.jpg" class="img-resp" alt="splSandwich2" />
+        <p><span><i></i> VIRGINIA HAM, TURKEY SWISS, CORNED BEEF, LETTUCE, TOMATO, Oil & Viniger or MAYO...</i>
+          <br>
+          <strong><i>Reg - $9.49</i></strong>
+          <br>
+          <strong><i>Sub - $13.49</i></strong>
+          <br></span></p>
       </div>
       <div class="col-sm-4">
         <p class="fewThings">B-52</p>
-        <img src="./img/b52.jpg" class="img-resp" alt="solve" />
+        <img src="./img/b52.jpg" class="img-resp" alt="splSandwich3" />
+        <p><span><i></i>TURKEY, HAM, PROVOLONE, LETTUCE, TOMATO, HOT PEPPERS, Oil & Viniger or MAYO...</i>
+          <br>
+          <strong><i>Reg - $9.49</i></strong>
+          <br>
+          <strong><i>Sub - $13.49</i></strong>
+          <br></span></p>
+      </div>
+      <div class="col-sm-4">
+        <p class="fewThings"><i>CHILD CHAMPION</i></p>
+        <img src="./img/childChamp.jpg" class="img-resp" alt="splSandwich4" />
+        <p><span><i></i>CHICKEN BREAST (grilled or breaded), <br> FRESH MOZZARELLA, ROASTED PEPPERS, <br>BALSAMIC, LETTUCE....</i>
+          <br>
+          <strong><i>Reg - $10.99</i></strong>
+          <br>
+          <strong><i>Sub - $14.49</i></strong>
+          <br></span></p>
+      </div>
+      <div class="col-sm-4">
+        <p class="fewThings"><i>BLT</i></p>
+        <img src="./img/blt.jpg" class="img-resp" alt="splSandwich4" />
+        <p><span><i></i>BACON - LETTUCE - ТОМАТО w/Mayo <br>ADD TURKEY - $2.49 <br>ADD AVACADO - $1.99</i>
+          <br>
+          <strong><i>Reg - $8.49</i></strong>
+          <br>
+          <strong><i>Sub - $12.49</i></strong>
+          <br></span></p>
+      </div>
+      <div class="col-sm-4">
+        <p class="fewThings">Sloppy Joe</p>
+        <img src="./img/sloppyJoe.jpg" class="img-resp" alt="splSandwich5" />
+        <p><span><i></i>Triple-Decker Turkey, Roast Beef, Cole Slaw and Russian <br>Dressing Lettuce....</i>
+          <br>
+          <strong><i>Sloppy Joe Jr. - $13.99</i></strong>
+          <br>
+          <strong><i>Sloppy Joe Sub - $17.99</i></strong>
+          <br></span></p>
       </div>
     </div>
   </div>
+
+  <div class="text-center rounded animate__animated animate__fadeIn">
+    <i class="fas fa-champagne-glasses fa-2x mb-3 rounded bg-success p-1"></i>
+    <p class="h5 font-weight-bold px-3">
+      Home, Office, Weddings, Showers, Engagements, Communions, Picnics, Graduations, Bris, Holidays, Party Rentals, and more!!
+    </p>
+  </div>
+  
   <hr />
+
   <div class="container-fluid text-center">
     <section class="intro">
       <div id="/abtMe" class="row">
@@ -266,34 +316,76 @@
       </div>
     </section>
   </div>
-  <br />
-  <hr />
   
-  <br /><br />
   <hr />
+
+    <!-- FORM -->
+    <form id="orderForm" action="https://formspree.io/f/xjkoezpz" method="POST" class="p-4 border rounded" style="max-width: 500px; margin: auto;">
+      <h5 class="text-center mb-3">Send Us Your Order</h5>
+      
+      <div class="mb-3">
+        <label for="contact" class="form-label">Phone or Email</label>
+        <input type="text" name="contact" id="contact" class="form-control" required placeholder="Enter phone number or email" autocomplete="off">
+        <div id="contactError" style="color: red; display: none; font-size: 0.9em; margin-top: 5px;">Please enter a valid phone number or email.</div>
+      </div>
+    
+      <div class="mb-3">
+        <label for="message" class="form-label">Please Type Your Order (online ordering coming soon!!)</label>
+        <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
+        <small class="form-text text-muted">
+          When placing your order, please include any special instructions like: Salt/Pepper, Ketchup, Lettuce/Tomato/Mayo, etc.
+        </small>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send</button>
+    </form>
+
+  <!-- MAP -->
   <center>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.142371057927!2d-74.27081082483372!3d40.93454682396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303ca71ff7acf%3A0x57747a98d33d1bee!2sMax&#39;s%20Delicatessen!5e0!3m2!1sen!2sus!4v1754152444490!5m2!1sen!2sus"
       id="map" width="70%" height="350" style="border: 1px solid black" allowfullscreen="" loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </center>
-  <footer class="container-fluid text-center">
-    <div class="footer-container">
-      <a>Lets get Connected</a>
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-square-youtube fa-2x"></i></a>
-        </li>
-      </ul>
-      <a class="fontSty">themaxsdeli@gmail.com</a>
+
+<!-- FOOTER -->
+  <footer class="bg-light text-dark py-4 mt-5 border-top">
+    <div class="container text-center">
+      <h5 class="mb-3">Let’s Get Connected</h5>
+  
+      <div class="mb-3">
+        <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank" class="text-dark mx-2">
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" class="text-dark mx-2">
+          <i class="fab fa-youtube-square fa-2x"></i>
+        </a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-envelope me-2"></i>
+        <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-phone me-2"></i>
+        <a href="tel:+19735551234" class="text-dark text-decoration-none">+1(973)-694-3163</a>
+      </div>
+  
+      <div class="mb-2">
+        <i class="fas fa-fax me-2"></i>
+       
+      </div>
+  
+      <div class="mb-3">
+        <i class="fas fa-map-marker-alt me-2"></i>
+        1484 RT-23, Wayne, NJ 07470
+      </div>
+  
+      <p class="small mb-0 text-muted">© 2025 Max’s Deli | Built by Sam C.</p>
     </div>
-    <span id="copyright">
-      <p>2025 &copy by Sam C.</p>
-    </span>
   </footer>
+  
+  
 </body>
 
 </html>
