@@ -331,9 +331,9 @@ h2.mb-4 {
 
 .flashing-banner {
   position: fixed;
-  top: 80px;      /* Adjust to clear your navbar */
+  top: 80px;  /* Default top space */
   right: 20px;
-  z-index: 9999;  /* Keep it on top */
+  z-index: 9999;
   background-color: #ff0000;
   color: white;
   padding: 10px 20px;
@@ -341,7 +341,6 @@ h2.mb-4 {
   font-weight: bold;
   animation: flashText 1s infinite;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  /* pointer-events: none;  <-- Remove this */
 }
 
 /* Flash animation */
@@ -349,6 +348,16 @@ h2.mb-4 {
   0%   { opacity: 1; }
   50%  { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* Media Query to shift banner down on smaller screens */
+@media (max-width: 768px) {
+  .flashing-banner {
+    top: 140px;  /* Move it down further on small screens */
+    right: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
 
 
