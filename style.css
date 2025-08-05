@@ -306,6 +306,9 @@ h2.mb-4 {
   }
   h2.mb-4 {
     font-size: 2rem;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
   .special-name {
     font-size: 1.2rem;
