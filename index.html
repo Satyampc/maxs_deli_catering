@@ -21,40 +21,47 @@
 </head>
 
 <body>
-  <!-- Bootstrap 5 Navbar -->
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center" href="./index.html">
-      <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
-      <i>Max’s Delicatessen</i>
-    </a>
-
-    <!-- Hamburger / Toggler Button -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Collapsible Menu -->
-    <div class="collapse navbar-collapse" id="navbarMenu">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./menus.html">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Catering</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
-        </li>
-      </ul>
+ 
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container-fluid justify-content-between">
+      <!-- Logo & Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
+        <i>Max’s Delicatessen</i>
+      </a>
+  
+      <!-- Toggler for mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Collapsible nav items -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="./menus.html">Menu</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#">Catering</a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>  
 
+  <a href="./dailySpecial.html" style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
+    <div class="flashing-banner">
+      🔥 Don't Miss Our Daily Specials! 🔥
+    </div>
+  </a>
+    
   <div class="jumbotron">
   </div>
   <hr />

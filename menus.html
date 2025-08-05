@@ -15,42 +15,49 @@
 </head>
 
 <body>
-  <!-- Bootstrap 5 Navbar -->
   <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-between">
+      <!-- Logo & Brand -->
       <a class="navbar-brand d-flex align-items-center" href="./index.html">
         <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
         <i>Max’s Delicatessen</i>
       </a>
-
-      <!-- Hamburger / Toggler Button -->
+  
+      <!-- Toggler for mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
         aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <!-- Collapsible Menu -->
+      <!-- Collapsible nav items -->
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fas fa-home"></i></a>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-3">
             <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-3">
             <a class="nav-link active" href="#">Catering</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item me-3">
             <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
           </li>
         </ul>
-        <a href="#orderForm" class="btn btn-danger d-flex align-items-center">
-          <i class="bi bi-bag-fill "></i> Order Now
+        <a href="#orderForm" class="btn btn-danger ms-3 d-flex align-items-center">
+          <i class="bi bi-bag-fill me-1"></i> Order Now
         </a>
       </div>
     </div>
   </nav>
+  
+  
+  <a href="./dailySpecial.html" style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
+    <div class="flashing-banner">
+      🔥 Don't Miss Our Daily Specials! 🔥
+    </div>
+  </a>
 
   <!-- jumbotron -->
   <div class="jumbotron test">

@@ -141,6 +141,17 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .btn {
+    margin-top: 10px;
+  }
+}
+
 #beat {
   border-radius: 50%;
   background-color: red;
@@ -316,6 +327,28 @@ h2.mb-4 {
   .special-price {
     font-size: 1rem;
   }
+}
+
+.flashing-banner {
+  position: fixed;
+  top: 80px;      /* Adjust to clear your navbar */
+  right: 20px;
+  z-index: 9999;  /* Keep it on top */
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: flashText 1s infinite;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  /* pointer-events: none;  <-- Remove this */
+}
+
+/* Flash animation */
+@keyframes flashText {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 

@@ -12,3 +12,11 @@ function navInStyle() {
     location.assign("/index.html");
   }, 3000);
 }
+
+
+  // Check if the current page is dailySpecial.html
+  if (window.location.pathname.includes("dailySpecial.html")) {
+    const banner = document.getElementById("flashing-banner");
+    if (banner) banner.style.display = "none";
+  }
+
