@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Satyams_Profile</title>
+  <link rel="icon" href="img/max_deli_logo.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/863a30ca91.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 5 JS (for navbar toggler) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+<!-- Navbar -->
+      <nav class="navbar navbar-light bg-light fixed-top">
+        <div class="container-fluid justify-content-between">
+          <!-- Left: Logo and Brand -->
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
+            <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
+            <i>Max’s Delicatessen</i>
+          </a>
+
+              <!-- Center: Store Closed Message -->
+    <!-- <div class="mx-auto text-danger fw-bold fs-1 d-none d-md-block">
+      Store Closed for the Day!!
+    </div> -->
+    <a href="#orderForm" class="btn btn-danger ms-3 d-flex align-items-center"><i class="fas fa-phone"></i>
+        <i class="bi bi-bag-fill me-1"></i> Call Now -+1(973)-694-3163
+    </a>
+          <!-- Right: Full Menu + Button -->
+          <div class="d-flex align-items-center">
+            <ul class="navbar-nav flex-row">
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="./menus.html">Menu</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <a href="./dailySpecial.html" style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
+      <div class="flashing-banner">
+        🔥 Click here for Our Daily Specials!! 🔥
+      </div>
+    </a>
+
+<div class="container p-5 my-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow-lg border-0 rounded-3">
+                <div class="card-body p-4">
+                    <h2 class="text-center mb-4">Catering Menu</h2>
+
+                    <!-- Cold Section -->
+                    <h4 class="text-primary border-bottom pb-2 mb-3">Cold Sandwiches & Platters</h4>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item d-flex justify-content-between">
+                            Deep Tray (35–40 people) <span class="fw-bold">$99.95</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            Cold Cut Platter & Sandwich <span class="fw-bold">$9.95 / person</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            Assorted Sandwich Platter <span class="fw-bold">$13.95</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            Combination Salad <span class="fw-bold">$13.95</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            6 ft / 4 ft / 3 ft Subs <span class="fw-bold">$22.50 / ft</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            Roast Beef Subs/ Chicken Cutlet Subs <span class="fw-bold">$24.95 / ft</span>
+                        </li>
+                        <li class="list-group-item">
+                            Salads are priced per pound.
+                        </li>
+                        <li class="list-group-item text-center ">
+                            <em>Spoons, thongs & utensils provided.</em>
+                        </li>
+                    </ul>
+
+                    <!-- Hot Section -->
+                    <h4 class="text-danger border-bottom pb-2 mb-3">Hot Trays</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">
+                            Full Deep Tray <span class="fw-bold">$100</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            ½ Deep Tray <span class="fw-bold">$60</span>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Map -->
+      <div class="container text-center mb-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.142371057927!2d-74.27081082483372!3d40.93454682396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303ca71ff7acf%3A0x57747a98d33d1bee!2sMax&#39;s%20Delicatessen!5e0!3m2!1sen!2sus!4v1754152444490!5m2!1sen!2sus"
+          id="map" width="70%" height="350" style="border: 1px solid black" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-light text-dark py-4 mt-5 border-top">
+        <div class="container text-center">
+          <h5 class="mb-3">Let’s Get Connected</h5>
+
+          <div class="mb-3">
+            <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank" class="text-dark mx-2">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-dark mx-2">
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </a>
+          </div>
+
+          <div class="mb-2">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
+          </div>
+
+          <div class="mb-2">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+19735551234" class="text-dark text-decoration-none">+1(973)-694-3163</a>
+          </div>
+
+          <div class="mb-2">
+            <i class="fas fa-fax me-2"></i>
+
+          </div>
+
+          <div class="mb-3">
+            <i class="fas fa-map-marker-alt me-2"></i>
+            1484 RT-23, Wayne, NJ 07470
+          </div>
+
+          <p class="small mb-0 text-muted">© 2025 Max’s Deli | Built by Sam C.</p>
+        </div>
+      </footer>
+
+</body>
+</html>
