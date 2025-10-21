@@ -365,6 +365,10 @@ h2.mb-4 {
   transform: scale(1.05); /* zooms image slightly on hover */
 }
 
+.sweet {
+  text-decoration: underline;
+}
+
 .notice-box {
     background: linear-gradient(135deg, #ff4d4d, #ff9966);
     color: white;
