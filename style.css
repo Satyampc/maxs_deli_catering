@@ -208,11 +208,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-.special-name {
-  font-weight: bold;
-  font-size: 1.25rem;
-}
-
 .special-description {
   font-style: italic;
   color: #555;
@@ -321,9 +316,7 @@ h2.mb-4 {
     visibility: visible !important;
     opacity: 1 !important;
   }
-  .special-name {
-    font-size: 1.2rem;
-  }
+
   .special-price {
     font-size: 1rem;
   }
