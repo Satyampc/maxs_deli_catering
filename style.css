@@ -336,6 +336,19 @@ h2.mb-4 {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.flashing-ban {
+  /* position: fixed; */
+  top: 80px;  /* Default top space */
+  right: 20px;
+  z-index: 9999;
+  background-color: #ff0000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: flashText 1s infinite;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
