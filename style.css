@@ -493,6 +493,11 @@ h2.mb-4 {
   font-weight: bold;
 }
 
+.longRoll{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 
 .addItems{
   color: red;
