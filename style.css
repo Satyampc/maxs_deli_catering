@@ -13,12 +13,18 @@
   scroll-behavior: smooth;
 }
 
+.navi{
+
+}
+
+
 .img-resp {
   max-width: 250px;
   max-height: 250px;
   padding-bottom: 25px;
 
 }
+
 p .fName,
 .success,
 .navbar-brand {
@@ -42,17 +48,17 @@ p .fName,
   text-decoration: underline;
 }
 .jumbotron {
-  background-image: url("./img/mainLandingPic.png");
+  background-image: url("./img/Deli_Main_Banner.png");
   background-size: cover;
   background-position: center;
-  height: 400px; 
+  height: 800px; 
   width: 100%;
 }
 .test {
   background-image: url("./img/menuLanding.jpg");
   background-size: cover;
   background-position: center;
-  height: 400px; 
+  height: 750px; 
   width: 100%;
 }
 
@@ -539,6 +545,61 @@ h2.mb-4 {
     background: #ffffff;
     border-radius: 5px;
 }
+
+/* Header Container Styling */
+  .brand-container {
+    text-align: center;
+    display: inline-block;
+    font-family: 'Georgia', serif;
+  }
+
+  .brand-title {
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    color: #222222;
+  }
+
+  .brand-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 2px;
+  }
+
+  .brand-est {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #444444;
+    margin: 6px 0 16px 0;
+  }
+
+  /* Order Now Button Styling */
+  .order-btn {
+    margin-top: 340px;
+    margin-left: 201px;
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #a8201a; /* Classic deli red */
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+  }
+
+  /* Button Hover State */
+  .order-btn:hover {
+    background-color: #801813; /* Darker red on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    transform: translateY(-2px);
+  }
 
 @keyframes fadeout {
   from {
