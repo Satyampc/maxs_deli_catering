@@ -1,5 +1,9 @@
-* {
-  caret-color: transparent !important;
+body {
+  background-color: #fffaf0 !important;
+}
+
+footer {
+  background-color: #f5e6c8 !important;
 }
 
 .active {
@@ -13,16 +17,14 @@
   scroll-behavior: smooth;
 }
 
-.navi{
-
-}
-
-
 .img-resp {
   max-width: 250px;
   max-height: 250px;
   padding-bottom: 25px;
 
+}
+.navbar{
+  background-color: #fffaf0 !important;
 }
 
 p .fName,
@@ -574,6 +576,108 @@ h2.mb-4 {
     color: #444444;
     margin: 6px 0 16px 0;
   }
+
+  /*=========================*/
+  /* .features-section{
+    background:#f8f9fa;
+} */
+#feat {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+  background: #4a627a;
+}
+
+#feat .row{
+  --bs-gutter-x:5rem;
+}
+
+.feature-card{
+  background: #fff;
+  border-radius: 20px;
+  padding: 70px 55px;      /* Increased from 35px */
+  min-height: 450px;       /* Makes all cards taller */
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0,0,0,.08);
+  transition: all .35s ease;
+}
+
+.feature-card:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+}
+
+.feature-icon{
+  font-size: 4rem;
+  color: #c62828;
+  margin-bottom: 25px;
+}
+
+.feature-card h3{
+  font-size: 2rem;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.feature-card p{
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.feature-card .btn {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+/* about Maxs Section */
+.about-section{
+    padding:100px 0;
+    background:#fff;
+}
+
+.about-section h2{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.about-section p{
+    font-size:1.15rem;
+    line-height:1.9;
+    color:#555;
+}
+
+.about-section img{
+    border-radius:20px;
+    transition:.4s;
+}
+
+.about-section img:hover{
+    transform:scale(1.02);
+}
+
+/* About Maxs Section */
+
+.delivery-icons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.delivery-icons img{
+    height:40px;
+    transition:.3s;
+}
+
+.delivery-icons img:hover{
+    transform:scale(1.1);
+}
+/*=========================*/
 
   /* Order Now Button Styling */
   .order-btn {
