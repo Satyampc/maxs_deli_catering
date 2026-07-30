@@ -1,5 +1,6 @@
 body {
   background-color: #fffaf0 !important;
+  /* font-family:Poppins,sans-serif; */
 }
 
 footer {
@@ -9,28 +10,66 @@ footer {
 .active {
   margin-top: 5px;
 }
-.container-fluid .text-center {
-  transform: translate(-50%);
-  margin-left: 50%;
-}
+
 #abtMe {
   scroll-behavior: smooth;
 }
 
 .img-resp {
-  max-width: 250px;
-  max-height: 250px;
-  padding-bottom: 25px;
-
+    width:100%;
+    max-width:280px;
+    height:auto;
+    border-radius:12px;
 }
+
 .navbar{
-  background-color: #fffaf0 !important;
+  background: rgba(255,255,255,0);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    padding: 15px 0;
+    transition:
+        background-color 0.45s ease,
+        padding 0.35s ease,
+        box-shadow 0.35s ease,
+        backdrop-filter 0.35s ease;
+    z-index: 1050;
+}
+
+.navbar.scrolled{
+      background: rgba(28,28,28,.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    padding: 8px 0;
+}
+
+.navbar-brand img {
+    height: 48px;
+    transition: height 0.35s ease;
+}
+
+.navbar.scrolled .navbar-brand img {
+    height: 40px;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important;
+    transition: color 0.35s ease;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+    color: #ffffff !important;
 }
 
 p .fName,
 .success,
 .navbar-brand {
-  font-family: fantasy;
+font-family:Poppins,sans-serif;
   color: rgb(48, 44, 44);
 }
 .success {
@@ -50,12 +89,26 @@ p .fName,
   text-decoration: underline;
 }
 .jumbotron {
-  background-image: url("./img/Deli_Main_Banner.png");
-  background-size: cover;
-  background-position: center;
-  height: 800px; 
-  width: 100%;
+ background-image: url("./img/Deli_Main_Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    width: 100%;
+    min-height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
+
+.jumbotron::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.20);
+}
+
 .test {
   background-image: url("./img/menuLanding.jpg");
   background-size: cover;
@@ -79,7 +132,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6f7c83;
+  background-color: #2b2b2b;
 }
 
 .footer-container a {
@@ -550,31 +603,38 @@ h2.mb-4 {
 
 /* Header Container Styling */
   .brand-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    display: inline-block;
+
     font-family: 'Georgia', serif;
+
+    max-width: 700px;
+    width: 100%;
   }
 
   .brand-title {
-    font-size: 32px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
     font-weight: bold;
     font-style: italic;
-    color: #222222;
+    color: #222;
   }
 
   .brand-subtitle {
-    font-size: 22px;
+    font-size: clamp(1.3rem, 3vw, 2rem);
     font-weight: bold;
-    color: #222222;
-    margin-top: 2px;
+    color: #222;
+    margin-top: 8px;
   }
 
   .brand-est {
-    font-size: 14px;
+    font-size: clamp(1.3rem, 3vw, 2rem);
     font-weight: bold;
-    letter-spacing: 2px;
-    color: #444444;
-    margin: 6px 0 16px 0;
+    color: #222;
+    margin-top: 8px;
   }
 
   /*=========================*/
@@ -582,8 +642,8 @@ h2.mb-4 {
     background:#f8f9fa;
 } */
 #feat {
-  padding-top: 10rem !important;
-  padding-bottom: 10rem !important;
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important;
   background: #4a627a;
 }
 
@@ -597,14 +657,15 @@ h2.mb-4 {
   padding: 70px 55px;      /* Increased from 35px */
   min-height: 450px;       /* Makes all cards taller */
   text-align: center;
-  height: 100%;
+  height: 95%;
   box-shadow: 0 12px 30px rgba(0,0,0,.08);
   transition: all .35s ease;
+  transition:.35s;
 }
 
 .feature-card:hover{
-  transform: translateY(-8px);
-  box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 }
 
 .feature-icon{
@@ -670,8 +731,9 @@ h2.mb-4 {
 }
 
 .delivery-icons img{
-    height:40px;
-    transition:.3s;
+    height:42px;
+    object-fit:contain;
+    margin:8px;
 }
 
 .delivery-icons img:hover{
@@ -681,21 +743,19 @@ h2.mb-4 {
 
   /* Order Now Button Styling */
   .order-btn {
-    margin-top: 340px;
-    margin-left: 201px;
-    display: inline-block;
-    padding: 12px 28px;
-    background-color: #a8201a; /* Classic deli red */
-    color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
-    transition: all 0.25s ease;
+    display:inline-block;
+    margin-top:25px;
+    padding:16px 36px;
+    background:#a8201a;
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+    box-shadow:0 5px 12px rgba(0,0,0,.25);
   }
 
   /* Button Hover State */
@@ -704,6 +764,29 @@ h2.mb-4 {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
     transform: translateY(-2px);
   }
+
+  /* Media for Jumbotron */
+    @media (max-width:768px) {
+  
+      .jumbotron {
+        min-height: 500px;
+        padding: 20px;
+      }
+  
+      .brand-title {
+        font-size: 2rem;
+      }
+  
+      .brand-subtitle {
+        font-size: 1.2rem;
+      }
+  
+      .order-btn {
+        width: 220px;
+        padding: 12px 20px;
+        font-size: .95rem;
+      }
+    }
 
 @keyframes fadeout {
   from {

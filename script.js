@@ -14,9 +14,14 @@ function navInStyle() {
 }
 
 
-  // Check if the current page is dailySpecial.html
-  if (window.location.pathname.includes("dailySpecial.html")) {
-    const banner = document.getElementById("flashing-banner");
-    if (banner) banner.style.display = "none";
-  }
+  window.addEventListener("scroll", function () {
 
+    const navbar = document.querySelector(".navbar");
+
+    if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+
+});
