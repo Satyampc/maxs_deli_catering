@@ -19,40 +19,45 @@
 </head>
 
 <body>
- <!-- Navbar -->
-  <nav class="navbar  fixed-top">
-    <div class="container-fluid justify-content-between align-items-center">
+<!-- Updated Navbar Structure -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
 
-      <!-- Left: Logo and Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40">
-        <i>Max’s Delicatessen</i>
-      </a>
+    <!-- Left: Logo and Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+      <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="48" class="me-2">
+      <span class="fst-italic">Max’s Delicatessen</span>
+    </a>
 
-      <!-- Right: Menu Links -->
-      <div class="d-flex align-items-center">
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item me-3">
-            <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class=" nav-link active" target="_blank" href="./dailySpecial.html">
-              <p class="flashing-banner">
-                🔥 Daily Specials!! 🔥
-              </p>
-            </a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
-          </li>
-        </ul>
-      </div>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Right Menu Links -->
+    <div class="navbar-brand collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center gap-2 mt-3 mt-lg-0">
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="./index.html"><i class="fas fa-sm fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./dailySpecial.html">
+            <span class="flashing-banner badge bg-danger text-white">
+              🔥 Daily Specials!! 🔥
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Specials Section -->
   <div class="container specials-container pt-5">
@@ -62,92 +67,15 @@
 
     <h4 class="mb-2">🌸 Friday July 31st, 2026 🍁</h4>
 
-
-
     </section>
-    <!-- <div
-      style="background:#0b5d2a;color:white;padding:25px;border-radius:12px;text-align:center;font-family:Arial, sans-serif;max-width:700px;margin:auto;">
-
-      <h1 style="color:#ffd700;margin-bottom:10px;">🍀 St. Patrick’s Day Specials 🍀</h1>
-      <p style="font-size:18px;margin-bottom:20px;">
-        Celebrate St. Patrick’s Day with our traditional Irish favorites!
-      </p>
-
-      <div style="background:#ffffff;color:#0b5d2a;padding:15px;border-radius:8px;margin-bottom:15px;">
-        <h2 style="margin:5px 0;">🍀 Fresh Corned Beef Dinner - $23
-          .99 🍀</h2>
-        <ul style="list-style:none;padding:0;margin:0;">
-          <li>✔ Slow-Cooked Fresh Corned Beef 🐮</li>
-          <li>✔ Cabbage 🥦</li>
-          <li>✔ Carrots 🥕</li>
-          <li>✔ Red Potatoes 🥔</li>
-          <li>✔ Irish Soda Bread 🍞</li>
-          <li>✔ And a Can Soda 🥫 or Bottled Water </li>
-          <Strong><i>with a side of Mustard and Pickle!!</i></Strong>
-        </ul>
-      </div>
-
-      <div style="background:#ffffff;color:#0b5d2a;padding:15px;border-radius:8px;margin-bottom:15px;">
-        <h2 style="margin:5px 0;">Fresh Corned Beef & Cabbage Sandwich 🥪 - $12.95</h2>
-        <p style="margin:8px 0;">
-          🍀 Tender fresh corned beef and cabbage served on a fresh Rye or w/ Irish Soda Bread.🍀
-        </p>
-      </div>
-
-      <p style="font-size:18px;font-weight:bold;margin-top:15px;">
-        🍀CALL 973-694-3163 for CATERING or Large orders🍀 <br>
-        🍀 Available until order lasts!!🍀
-      </p>
-
-    </div> -->
 
     <a href="./dailySpecial.html"
       style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
       <!-- <div class="flashing-banner">
         🔥 🦃 WE HAVE FRESH TURKEY 🦃 🔥
       </div> -->
+    
     </a>
-
-    <!-- Summer special -->
-    <!-- <section class="summer-specials">
-      <h2>☀️ Max's Deli Summer Specials☀️</h2>
-
-      <div class="special-category">
-        <h3>🍳 Breakfast Combos</h3>
-
-        <div class="special-item">
-          <strong>Any Breakfast Sandwich</strong><br>
-          Get a *Coffee for <strong>$1</strong>
-        </div>
-
-        <div class="special-item">
-          <strong>Bagel w/ Cream Cheese + Medium Coffee!!</strong><br>
-          $3.99
-        </div>
-
-        <div class="special-item">
-          <strong>Bagel w/ Butter + Medium Coffee!!</strong><br>
-          $3.45
-        </div>
-      </div>
-
-      <div class="special-category">
-        <h3>🥪 Lunch Combos</h3>
-
-        <div class="special-item">
-          <strong>Sandwich + Chips + Drink Combo!!</strong><br>
-          Get <strong>$2 OFF</strong>
-        </div>
-
-        <div class="special-item">
-          <strong>Lunch Sandwich + Drink Combo!!</strong><br>
-          Get <strong>$1 OFF</strong>
-        </div>
-      </div>
-      <small>
-        * Offer applies to Small hot coffee only.
-      </small>
-    </section> -->
 
     <br>
     <!-- Fresh Turkey -->
@@ -306,49 +234,100 @@
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-light text-dark py-4 mt-5 border-top">
-    <div class="container text-center">
-      <h5 class="mb-3">Let’s Get Connected</h5>
+  <!-- FOOTER -->
+  <footer class="bg-light text-dark py-5 mt-5 border-top">
+    <div class="container">
 
-      <div class="mb-3">
-        <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank" class="text-dark mx-2">
-          <i class="fab fa-facebook-square fa-2x"></i>
-        </a>
-        <a href="https://www.youtube.com/" target="_blank" class="text-dark mx-2">
-          <i class="fab fa-youtube-square fa-2x"></i>
-        </a>
+      <div class="row text-center text-md-start">
+
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Max’s Deli</h5>
+          <p class="small">
+            Fresh sandwiches, breakfast, salads, catering, and more.
+            Serving Wayne, NJ with quality food and friendly service.
+          </p>
+
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61584419571452" target="_blank" class="text-dark me-3" aria-label="Facebook">
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </a>
+
+            <a href="https://www.instagram.com/themaxsdeli/" target="_blank" class="text-dark me-3" aria-label="Instagram">
+              <i class="fab fa-instagram-square fa-2x"></i>
+            </a>
+            
+            <a href="https://www.tiktok.com/@maxsdeliwayne" target="_blank" class="text-dark me-3" aria-label="TikTok">
+              <i class="fab fa-youtube-square fa-2x"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Contact -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p class="mb-2">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">
+              themaxsdeli@gmail.com
+            </a>
+          </p>
+
+          <p class="mb-2">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+19736943163" class="text-dark text-decoration-none">
+              (973) 694-3163
+            </a>
+          </p>
+
+          <p class="mb-2">
+            <i class="fas fa-fax me-2"></i>
+            973-694-4690
+          </p>
+
+          <p>
+            <i class="fas fa-map-marker-alt me-2"></i>
+            1484 Route 23<br>
+            Wayne, NJ 07470
+          </p>
+        </div>
+
+
+        <!-- Hours / Ordering -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Visit Us</h5>
+
+          <p class="mb-2">
+            <i class="fas fa-clock me-2"></i>
+            Mon - Fri: 6:00 AM - 5:00 PM
+          </p>
+
+          <p class="mb-3">
+            <i class="fas fa-clock me-2"></i>
+            Sat: 7:00 AM - 3:00 PM
+          </p>
+        </div>
       </div>
 
-      <!--  Order Online with Grubhub -->
-      <!-- <div class="mb-4">
-        <a href="https://grubhub.com/restaurant/maxs-delicatessen-1484-nj-23-wayne/15067224" target="_blank"
-          rel="noopener noreferrer" class="btn btn-danger">
-          <i class="fas fa-shopping-bag me-2"></i>
-          Order Online with Grubhub
-        </a>
-      </div> -->
+      <hr>
 
-      <div class="mb-2">
-        <i class="fas fa-envelope me-2"></i>
-        <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
+      <div class="text-center">
+        <p class="small mb-0 text-muted">
+          © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
+        </p>
       </div>
-
-      <div class="mb-2">
-        <i class="fas fa-phone me-2"></i>
-        <a class="text-dark text-decoration-none">+1(973)-694-3163</a>
-        <i class="fas fa-fax m-2"></i>
-        <a class="text-dark text-decoration-none">973-694-4690</a>
+      <div class="text-center py-2">
+        <p class="small mb-1 text-muted">
+          © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
+        </p>
+        <p class="small mb-0 text-muted developer-sig">
+          Developed with ❤️ by <a href="#" target="_blank" class="developer-link">Satyam C</a>
+        </p>
       </div>
-
-      <div class="mb-3">
-        <i class="fas fa-map-marker-alt me-2"></i>
-        1484 RT-23, Wayne, NJ 07470
-      </div>
-
-      <p class="small mb-0 text-muted">© 2025 Max’s Deli | Built by Sam C.</p>
     </div>
   </footer>
+
 </body>
 
 </html>

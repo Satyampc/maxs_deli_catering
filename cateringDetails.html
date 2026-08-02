@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,350 +18,497 @@
 </head>
 
 <body>
-    
-<!-- Navbar -->
-      <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid justify-content-between">
-          <!-- Left: Logo and Brand -->
-          <a class="navbar-brand d-flex align-items-center" href="./index.html">
-            <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40" class="me-2">
-            <i>Max’s Delicatessen</i>
+
+ <!-- Updated Navbar Structure -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
+
+    <!-- Left: Logo and Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+      <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="48" class="me-2">
+      <span class="fst-italic">Max’s Delicatessen</span>
+    </a>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Right Menu Links -->
+    <div class="navbar-brand collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center gap-2 mt-3 mt-lg-0">
+        <li class="nav-item me-3">
+          <a class="nav-link active" href="./index.html"><i class="fas fa-sm fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./dailySpecial.html">
+            <span class="flashing-banner badge bg-danger text-white">
+              🔥 Daily Specials!! 🔥
+            </span>
           </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-              <!-- Center: Store Closed Message -->
-    <!-- <div class="mx-auto text-danger fw-bold fs-1 d-none d-md-block">
-      Store Closed for the Day!!
-    </div> -->
-    <a href="#orderForm" class="btn btn-danger ms-3 d-flex align-items-center"><i class="fas fa-phone"></i>
-        <i class="bi bi-bag-fill me-1"></i> Call Now +1(973)-694-3163
-    </a>
-          <!-- Right: Full Menu + Button -->
-          <div class="d-flex align-items-center">
-            <ul class="navbar-nav flex-row">
-              <li class="nav-item me-3">
-                <a class="nav-link active" href="./index.html"><i class="fas fa-home"></i></a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link active" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
-              </li>
-              <li class="nav-item me-3">
-                <a class="nav-link active" href="./dailySpecial.html">Daily Special</a>
-              </li>
-                                  <li class="nav-item me-3">
-                        <a class="nav-link active" href="https://www.themaxsdeli.com" target="_blank">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                    </li>
-                    <div class="mb-4">
-    <a href="https://grubhub.com/restaurant/maxs-delicatessen-1484-nj-23-wayne/15067224"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn btn-danger">
-        <i class="fas fa-shopping-bag me-2"></i>
-        Order Online with Grubhub
-    </a>
-</div>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-    <a href="./dailySpecial.html" style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
-      <div class="flashing-banner">
-        🔥 Click here for Our Daily Specials!! 🔥
-      </div>
-    </a>
-
-<div class="container p-5 my-5">
+  <div class="container p-5 my-5">
     <div class="row">
-        <div class="col-lg-8 mx-auto">
-            <div class="card shadow-lg border-0 rounded-3">
-                <div class="card-body p-4">
-                    <h2 class="text-center mb-4">Catering Menu</h2>
+      <div class="col-lg-8 mx-auto">
+        <div class="card shadow-lg border-0 rounded-3">
+          <div class="card-body p-4">
+            <h2 class="text-center mb-4">Catering Menu</h2>
 
-                    <!-- Cold Section -->
-                    <h4 class="text-primary border-bottom pb-2 mb-3">Cold Sandwiches & Platters</h4>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item d-flex justify-content-between">
-                            Deep Tray (35–40 people) <span class="fw-bold">$99.95</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            Cold Cut Platter & Sandwich <span class="fw-bold">$10.25 / person</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            Assorted Sandwich Platter <span class="fw-bold">$13.95</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            Combination Salad <span class="fw-bold">$13.95</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            6 ft / 4 ft / 3 ft Subs <span class="fw-bold">$22.50 / ft</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            Roast Beef Subs/ Chicken Cutlet Subs <span class="fw-bold">$24.95 / ft</span>
-                        </li>
-                        <li class="list-group-item">
-                            Salads are priced per pound.
-                        </li>
-                        <li class="list-group-item text-center ">
-                            <em>Utensils, serving spoons, tongs & Add-ons available upon request 
-                              <strong><i>(additional fee may apply).</i></strong></em>
-                        </li>
-                    </ul>
+            <!-- Cold Section -->
+            <h4 class="text-primary border-bottom pb-2 mb-3">Cold Sandwiches & Platters</h4>
+            <ul class="list-group mb-4">
+              <li class="list-group-item d-flex justify-content-between">
+                Deep Tray (35–40 people) <span class="fw-bold">$99.95</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                Cold Cut Platter & Sandwich <span class="fw-bold">$10.25 / person</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                Assorted Sandwich Platter <span class="fw-bold">$13.95</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                Combination Salad <span class="fw-bold">$13.95</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                6 ft / 4 ft / 3 ft Subs <span class="fw-bold">$22.50 / ft</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                Roast Beef Subs/ Chicken Cutlet Subs <span class="fw-bold">$24.95 / ft</span>
+              </li>
+              <li class="list-group-item">
+                Salads are priced per pound.
+              </li>
+              <li class="list-group-item text-center ">
+                <em>Utensils, serving spoons, tongs & Add-ons available upon request
+                  <strong><i>(additional fee may apply).</i></strong></em>
+              </li>
+            </ul>
 
-                    <!-- Hot Section -->
-                    <h4 class="text-danger border-bottom pb-2 mb-3">Hot Trays</h4>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between">
-                            Full Deep Tray <span class="fw-bold">$100</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between">
-                            ½ Deep Tray <span class="fw-bold">$60</span>
-                        </li>
-                    </ul>
+            <!-- Hot Section -->
+            <h4 class="text-danger border-bottom pb-2 mb-3">Hot Trays</h4>
+            <ul class="list-group">
+              <li class="list-group-item d-flex justify-content-between">
+                Full Deep Tray <span class="fw-bold">$100</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                ½ Deep Tray <span class="fw-bold">$60</span>
+              </li>
+            </ul>
 
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container my-4">
-    <div class="alert alert-danger text-center shadow p-3 rounded-3">
-      <h4 class="fw-bold">🚀 We Have a New Website!</h4>
-      <p class="mb-2">
-        Visit our brand-new site with <strong>Online Ordering</strong> and many more features.
-      </p>
-      <a href="https://www.themaxsdeli.com" class="btn btn-primary btn-lg" target="_blank">
-        Go to Our New Website
-      </a>
-    </div>
-  </div>
-
-  
-<div class="container my-5">
-  <h2 class="text-center mb-5">Our Catering Options</h2>
-  <div class="row justify-content-center g-4">
-
-    <!-- First Row (3 cards) -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/Cold Sandwich Platter.jpeg" class="card-img-top" alt="Cold Sandwiches">
-        <div class="card-body text-center">
-          <h5 class="card-title">Cold Sandwich Platters</h5>
-          <p class="card-text">Freshly made assorted sandwiches perfect for any event.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/HOt Trays.jpg" class="card-img-top" alt="Hot Trays">
-        <div class="card-body text-center">
-          <h5 class="card-title">Hot Trays</h5>
-          <p class="card-text">Delicious hot entrées served in full or half trays.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="img/Mix_Salad_Platter_Ranch.jpeg" class="card-img-top" alt="Salads">
-        <div class="card-body text-center">
-          <h5 class="card-title">Mixed Veggie Salad</h5>
-          <p class="card-text">A fresh mix of julienned vegetables, served with a side of creamy ranch dressing.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Second Row (2 cards) -->
-    <div class="col-md-5">
-      <div class="card h-100 shadow-sm">
-        <img src="img/Chicken_Skeewers.jpeg" class="card-img-top" alt="Party Subs">
-        <div class="card-body text-center">
-          <h5 class="card-title">Chicken Skewers Cater Tray - $75</h5>
-          <p class="card-text">(15 skewers) Tender grilled chicken breast marinated, 
-            in our house blend of herbs and spices, and speared in a bamboo skewer and grilled to perfection.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-5">
-      <div class="card h-100 shadow-sm">
-        <img src="img/Comb_Assorted_Platter.jpeg" class="card-img-top" alt="Combination Platters">
-        <div class="card-body text-center">
-          <h5 class="card-title">Combination / Assorted Platters</h5>
-          <p class="card-text">Mix of sandwiches, salads, and more customized to your party size.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Third Row (1 centered card) -->
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <img src="img/Utencils_Party Setup.jpg" class="card-img-top" alt="Utensils">
-        <div class="card-body text-center">
-          <h5 class="card-title">All-Inclusive Catering</h5>
-          <p class="card-text">We provide utensils, plates, and everything you need for your event.
-            <strong><i>(additional fee may apply).</i></strong>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Catering Menu</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-  <div class="container my-5">
-
-    <!-- Section: Salad Platters -->
-    <div class="card mb-4">
-      <div class="card-header bg-success text-white">
-        <h4 class="mb-0">Salad Platters</h4>
-      </div>
-      <div class="card-body">
-        <div class="row mb-2"><div class="col">Macaroni Salad</div><div class="col text-end">$5.99/LB</div></div>
-        <div class="row mb-2"><div class="col">Potato Salad</div><div class="col text-end">$5.99/LB</div></div>
-        <div class="row mb-2">
-          <div class="col">
-            Italian Pasta Salad <br>
-            <small class="text-muted">Bell peppers, pepperoncini, cherry tomatoes, red onion, salami, 
-              black olives, fresh mozzarella, parmesan cheese.</small>
           </div>
-          <div class="col text-end">$12.99/LB</div>
         </div>
-        <div class="row mb-2"><div class="col">Antipasto Salad</div><div class="col text-end">$40</div></div>
-        <div class="row mb-2"><div class="col">Cranberry Walnut Salad</div><div class="col text-end">$40</div></div>
-        <div class="row mb-2"><div class="col">Garden Salad</div><div class="col text-end">$50</div></div>
-        <div class="row"><div class="col">Caesar Salad</div><div class="col text-end">$50</div></div>
       </div>
     </div>
-
-    <!-- Section: Cold Appetizers -->
-    <div class="card mb-4">
-      <div class="card-header bg-primary text-white">
-        <h4 class="mb-0">Cold Appetizers Platters</h4>
-      </div>
-      <div class="card-body">
-        <div class="row mb-2"><div class="col">Roasted Peppers with Fresh Mozzarella</div><div class="col text-end">$40</div></div>
-        <div class="row"><div class="col">Meat & Cheese Board <br><small class="text-muted">Premium meats and cheese</small></div><div class="col text-end">$50</div></div>
-      </div>
-    </div>
-
-    <!-- Section: Party Platters -->
-    <div class="card mb-4">
-      <div class="card-header bg-warning text-dark">
-        <h4 class="mb-0">Party Platters</h4>
-      </div>
-      <div class="card-body">
-        <div class="row mb-2"><div class="col">By The Foot <br><small class="text-muted">Minimum 3 feet. 3 feet serves ~ 12 people.</small></div><div class="col text-end">$20/FT</div></div>
-        <div class="row mb-2"><div class="col">French Fries</div><div class="col text-end">$30</div></div>
-        <div class="row mb-2"><div class="col">Chicken Fingers <br><small class="text-muted">25 pieces</small></div><div class="col text-end">$45</div></div>
-        <div class="row mb-2"><div class="col">Mozzarella Sticks <br><small class="text-muted">40 pieces</small></div><div class="col text-end">$40</div></div>
-        <div class="row"><div class="col">Buffalo Wings <br><small class="text-muted">30 pieces</small></div><div class="col text-end">$45</div></div>
-      </div>
-    </div>
-
-   <!-- Section Italian -->
-<div class="card mb-4">
-  <div class="card-header bg-danger text-white">
-    <h4 class="mb-0">Hot Selection</h4>
-    <small>Choose Any 1 Pasta Dish & 2 Meat or Chicken Dishes for Your Hot & Cold Buffet</small>
-  </div>
-  <div class="card-body">
-    <div class="row fw-bold border-bottom pb-2 mb-2">
-      <div class="col-6">Dish</div>
-      <div class="col-3 text-end">Half Tray</div>
-      <div class="col-3 text-end">Full Tray</div>
-    </div>
-
-    <!-- Meat / Chicken Dishes -->
-    <div class="row mb-2"><div class="col-6">Chicken Parm</div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$90</div></div>
-    <div class="row mb-2"><div class="col-6">Chicken Francese</div><div class="col-3 text-end">$60</div><div class="col-3 text-end">$110</div></div>
-    <div class="row mb-2"><div class="col-6">Chicken Murphy <br><small class="text-muted">Mushrooms, hot or sweet peppers, onions in white wine sauce</small></div><div class="col-3 text-end">$60</div><div class="col-3 text-end">$110</div></div>
-    <div class="row mb-2"><div class="col-6">Chicken Marsala <br><small class="text-muted">Mushrooms, marsala wine sauce</small></div><div class="col-3 text-end">$60</div><div class="col-3 text-end">$110</div></div>
-    <div class="row mb-2"><div class="col-6">Italian Meatballs<br><small class="text-muted">20 pieces half tray</small></div><div class="col-3 text-end">$55</div><div class="col-3 text-end">$100</div></div>
-    <div class="row mb-2"><div class="col-6">Sausage, Peppers & Onions</div><div class="col-3 text-end">$60</div><div class="col-3 text-end">$110</div></div>
-    <div class="row mb-2"><div class="col-6">Eggplant Parm</div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$90</div></div>
-    <div class="row mb-2"><div class="col-6">Eggplant Rollatini</div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$90</div></div>
-    <div class="row mb-2"><div class="col-6">Stuffed Mushroom <br><small class="text-muted">Homemade breadcrumb stuffing</small></div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$90</div></div>
-    <div class="row mb-2"><div class="col-6">Broccoli Rabe <br><small class="text-muted">Sautéed in garlic and olive oil</small></div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$90</div></div>
-
-    <!-- Pasta Dishes -->
-    <div class="row mt-4">
-      <div class="col-12">
-        <h5 class="text-decoration-underline">Pasta Dishes</h5>
-      </div>
-    </div>
-    <div class="row mb-2"><div class="col-6">Cavatelli & Broccoli</div><div class="col-3 text-end">$55</div><div class="col-3 text-end">$10</div></div>
-    <div class="row mb-2"><div class="col-6">Pasta with Vodka Sauce</div><div class="col-3 text-end">$50</div><div class="col-3 text-end">$100</div></div>
-    <div class="row mb-2"><div class="col-6">Pasta with Tomato Sauce</div><div class="col-3 text-end">$40</div><div class="col-3 text-end">$85</div></div>
-    <div class="row mb-2"><div class="col-6">Lasagna</div><div class="col-3 text-end">$55</div><div class="col-3 text-end">$100<small> + $10 (additional meat)</small></div></div>
-    <div class="row mb-2"><div class="col-6">Stuffed Shells</div><div class="col-3 text-end">$55</div><div class="col-3 text-end">$100</div></div>
-    <div class="row mb-2"><div class="col-6">Baked Ziti</div><div class="col-3 text-end">$55</div><div class="col-3 text-end">$100</div></div>
-  </div>
-</div>
-
-
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
 
+  <div class="container my-5">
+    <h2 class="text-center mb-5">Our Catering Options</h2>
+    <div class="row justify-content-center g-4">
 
-  </div>
-</div>
-
-
-<!-- Google Map -->
-      <div class="container text-center mb-5">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.142371057927!2d-74.27081082483372!3d40.93454682396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303ca71ff7acf%3A0x57747a98d33d1bee!2sMax&#39;s%20Delicatessen!5e0!3m2!1sen!2sus!4v1754152444490!5m2!1sen!2sus"
-          id="map" width="70%" height="350" style="border: 1px solid black" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- First Row (3 cards) -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/Cold Sandwich Platter.jpeg" class="card-img-top" alt="Cold Sandwiches">
+          <div class="card-body text-center">
+            <h5 class="card-title">Cold Sandwich Platters</h5>
+            <p class="card-text">Freshly made assorted sandwiches perfect for any event.</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Footer -->
-      <footer class="bg-light text-dark py-4 mt-5 border-top">
-        <div class="container text-center">
-          <h5 class="mb-3">Let’s Get Connected</h5>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/HOt Trays.jpg" class="card-img-top" alt="Hot Trays">
+          <div class="card-body text-center">
+            <h5 class="card-title">Hot Trays</h5>
+            <p class="card-text">Delicious hot entrées served in full or half trays.</p>
+          </div>
+        </div>
+      </div>
 
-          <div class="mb-3">
-            <a href="https://www.facebook.com/MaxsDeliNJ/" target="_blank" class="text-dark mx-2">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="img/Mix_Salad_Platter_Ranch.jpeg" class="card-img-top" alt="Salads">
+          <div class="card-body text-center">
+            <h5 class="card-title">Mixed Veggie Salad</h5>
+            <p class="card-text">A fresh mix of julienned vegetables, served with a side of creamy ranch dressing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Row (2 cards) -->
+      <div class="col-md-5">
+        <div class="card h-100 shadow-sm">
+          <img src="img/Chicken_Skeewers.jpeg" class="card-img-top" alt="Party Subs">
+          <div class="card-body text-center">
+            <h5 class="card-title">Chicken Skewers Cater Tray - $75</h5>
+            <p class="card-text">(15 skewers) Tender grilled chicken breast marinated,
+              in our house blend of herbs and spices, and speared in a bamboo skewer and grilled to perfection.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="card h-100 shadow-sm">
+          <img src="img/Comb_Assorted_Platter.jpeg" class="card-img-top" alt="Combination Platters">
+          <div class="card-body text-center">
+            <h5 class="card-title">Combination / Assorted Platters</h5>
+            <p class="card-text">Mix of sandwiches, salads, and more customized to your party size.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Row (1 centered card) -->
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="img/Utencils_Party Setup.jpg" class="card-img-top" alt="Utensils">
+          <div class="card-body text-center">
+            <h5 class="card-title">All-Inclusive Catering</h5>
+            <p class="card-text">We provide utensils, plates, and everything you need for your event.
+              <strong><i>(additional fee may apply).</i></strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!DOCTYPE html>
+      <html lang="en">
+
+      <head>
+        <meta charset="UTF-8">
+        <title>Catering Menu</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+
+      <body>
+        <div class="container my-5">
+
+          <!-- Section: Salad Platters -->
+          <div class="card mb-4">
+            <div class="card-header bg-success text-white">
+              <h4 class="mb-0">Salad Platters</h4>
+            </div>
+            <div class="card-body">
+              <div class="row mb-2">
+                <div class="col">Macaroni Salad</div>
+                <div class="col text-end">$5.99/LB</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Potato Salad</div>
+                <div class="col text-end">$5.99/LB</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">
+                  Italian Pasta Salad <br>
+                  <small class="text-muted">Bell peppers, pepperoncini, cherry tomatoes, red onion, salami,
+                    black olives, fresh mozzarella, parmesan cheese.</small>
+                </div>
+                <div class="col text-end">$12.99/LB</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Antipasto Salad</div>
+                <div class="col text-end">$40</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Cranberry Walnut Salad</div>
+                <div class="col text-end">$40</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Garden Salad</div>
+                <div class="col text-end">$50</div>
+              </div>
+              <div class="row">
+                <div class="col">Caesar Salad</div>
+                <div class="col text-end">$50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Cold Appetizers -->
+          <div class="card mb-4">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">Cold Appetizers Platters</h4>
+            </div>
+            <div class="card-body">
+              <div class="row mb-2">
+                <div class="col">Roasted Peppers with Fresh Mozzarella</div>
+                <div class="col text-end">$40</div>
+              </div>
+              <div class="row">
+                <div class="col">Meat & Cheese Board <br><small class="text-muted">Premium meats and cheese</small>
+                </div>
+                <div class="col text-end">$50</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Party Platters -->
+          <div class="card mb-4">
+            <div class="card-header bg-warning text-dark">
+              <h4 class="mb-0">Party Platters</h4>
+            </div>
+            <div class="card-body">
+              <div class="row mb-2">
+                <div class="col">By The Foot <br><small class="text-muted">Minimum 3 feet. 3 feet serves ~ 12
+                    people.</small></div>
+                <div class="col text-end">$20/FT</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">French Fries</div>
+                <div class="col text-end">$30</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Chicken Fingers <br><small class="text-muted">25 pieces</small></div>
+                <div class="col text-end">$45</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col">Mozzarella Sticks <br><small class="text-muted">40 pieces</small></div>
+                <div class="col text-end">$40</div>
+              </div>
+              <div class="row">
+                <div class="col">Buffalo Wings <br><small class="text-muted">30 pieces</small></div>
+                <div class="col text-end">$45</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section Italian -->
+          <div class="card mb-4">
+            <div class="card-header bg-danger text-white">
+              <h4 class="mb-0">Hot Selection</h4>
+              <small>Choose Any 1 Pasta Dish & 2 Meat or Chicken Dishes for Your Hot & Cold Buffet</small>
+            </div>
+            <div class="card-body">
+              <div class="row fw-bold border-bottom pb-2 mb-2">
+                <div class="col-6">Dish</div>
+                <div class="col-3 text-end">Half Tray</div>
+                <div class="col-3 text-end">Full Tray</div>
+              </div>
+
+              <!-- Meat / Chicken Dishes -->
+              <div class="row mb-2">
+                <div class="col-6">Chicken Parm</div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$90</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Chicken Francese</div>
+                <div class="col-3 text-end">$60</div>
+                <div class="col-3 text-end">$110</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Chicken Murphy <br><small class="text-muted">Mushrooms, hot or sweet peppers, onions
+                    in white wine sauce</small></div>
+                <div class="col-3 text-end">$60</div>
+                <div class="col-3 text-end">$110</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Chicken Marsala <br><small class="text-muted">Mushrooms, marsala wine sauce</small>
+                </div>
+                <div class="col-3 text-end">$60</div>
+                <div class="col-3 text-end">$110</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Italian Meatballs<br><small class="text-muted">20 pieces half tray</small></div>
+                <div class="col-3 text-end">$55</div>
+                <div class="col-3 text-end">$100</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Sausage, Peppers & Onions</div>
+                <div class="col-3 text-end">$60</div>
+                <div class="col-3 text-end">$110</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Eggplant Parm</div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$90</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Eggplant Rollatini</div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$90</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Stuffed Mushroom <br><small class="text-muted">Homemade breadcrumb stuffing</small>
+                </div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$90</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Broccoli Rabe <br><small class="text-muted">Sautéed in garlic and olive oil</small>
+                </div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$90</div>
+              </div>
+
+              <!-- Pasta Dishes -->
+              <div class="row mt-4">
+                <div class="col-12">
+                  <h5 class="text-decoration-underline">Pasta Dishes</h5>
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Cavatelli & Broccoli</div>
+                <div class="col-3 text-end">$55</div>
+                <div class="col-3 text-end">$10</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Pasta with Vodka Sauce</div>
+                <div class="col-3 text-end">$50</div>
+                <div class="col-3 text-end">$100</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Pasta with Tomato Sauce</div>
+                <div class="col-3 text-end">$40</div>
+                <div class="col-3 text-end">$85</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Lasagna</div>
+                <div class="col-3 text-end">$55</div>
+                <div class="col-3 text-end">$100<small> + $10 (additional meat)</small></div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Stuffed Shells</div>
+                <div class="col-3 text-end">$55</div>
+                <div class="col-3 text-end">$100</div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-6">Baked Ziti</div>
+                <div class="col-3 text-end">$55</div>
+                <div class="col-3 text-end">$100</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+      </body>
+
+      </html>
+
+
+    </div>
+  </div>
+
+
+  <!-- Google Map -->
+  <div class="container text-center mb-5">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.142371057927!2d-74.27081082483372!3d40.93454682396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c303ca71ff7acf%3A0x57747a98d33d1bee!2sMax&#39;s%20Delicatessen!5e0!3m2!1sen!2sus!4v1754152444490!5m2!1sen!2sus"
+      id="map" width="70%" height="350" style="border: 1px solid black" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-light text-dark py-5 mt-5 border-top">
+    <div class="container">
+
+      <div class="row text-center text-md-start">
+
+        <!-- Brand / About -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Max’s Deli</h5>
+          <p class="small">
+            Fresh sandwiches, breakfast, salads, catering, and more.
+            Serving Wayne, NJ with quality food and friendly service.
+          </p>
+
+          <div>
+            <a href="https://www.facebook.com/profile.php?id=61584419571452" target="_blank" class="text-dark me-3"
+              aria-label="Facebook">
               <i class="fab fa-facebook-square fa-2x"></i>
             </a>
-            <a href="https://www.youtube.com/" target="_blank" class="text-dark mx-2">
+
+            <a href="https://www.instagram.com/themaxsdeli/" target="_blank" class="text-dark me-3"
+              aria-label="Instagram">
+              <i class="fab fa-instagram-square fa-2x"></i>
+            </a>
+
+            <a href="https://www.tiktok.com/@maxsdeliwayne" target="_blank" class="text-dark me-3" aria-label="TikTok">
               <i class="fab fa-youtube-square fa-2x"></i>
             </a>
           </div>
-
-          <div class="mb-2">
-            <i class="fas fa-envelope me-2"></i>
-            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
-          </div>
-
-         <div class="mb-2">
-            <i class="fas fa-phone me-2"></i>
-            <a class="text-dark text-decoration-none">+1(973)-694-3163</a>
-            <i class="fas fa-fax m-2"></i>
-            <a class="text-dark text-decoration-none">973-694-4690</a>
-          </div>
-
-          <div class="mb-3">
-            <i class="fas fa-map-marker-alt me-2"></i>
-            1484 RT-23, Wayne, NJ 07470
-          </div>
-
-          <p class="small mb-0 text-muted">© 2025 Max’s Deli | Built by Sam C.</p>
         </div>
-      </footer>
+
+
+        <!-- Contact -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p class="mb-2">
+            <i class="fas fa-envelope me-2"></i>
+            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">
+              themaxsdeli@gmail.com
+            </a>
+          </p>
+
+          <p class="mb-2">
+            <i class="fas fa-phone me-2"></i>
+            <a href="tel:+19736943163" class="text-dark text-decoration-none">
+              (973) 694-3163
+            </a>
+          </p>
+
+          <p class="mb-2">
+            <i class="fas fa-fax me-2"></i>
+            973-694-4690
+          </p>
+
+          <p>
+            <i class="fas fa-map-marker-alt me-2"></i>
+            1484 Route 23<br>
+            Wayne, NJ 07470
+          </p>
+        </div>
+
+
+        <!-- Hours / Ordering -->
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Visit Us</h5>
+
+          <p class="mb-2">
+            <i class="fas fa-clock me-2"></i>
+            Mon - Fri: 6:00 AM - 5:00 PM
+          </p>
+
+          <p class="mb-3">
+            <i class="fas fa-clock me-2"></i>
+            Sat: 7:00 AM - 3:00 PM
+          </p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="text-center">
+        <p class="small mb-0 text-muted">
+          © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
+        </p>
+      </div>
+      <div class="text-center py-2">
+        <p class="small mb-1 text-muted">
+          © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
+        </p>
+        <p class="small mb-0 text-muted developer-sig">
+          Developed with ❤️ by <a href="#" target="_blank" class="developer-link">Satyam C</a>
+        </p>
+      </div>
+    </div>
+  </footer>
 
 </body>
+
 </html>

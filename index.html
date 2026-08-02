@@ -24,40 +24,41 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar  fixed-top">
-    <div class="container-fluid justify-content-between align-items-center">
+ <!-- Updated Navbar Structure -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid px-4">
 
-      <!-- Left: Logo and Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="40">
-        <i>Max’s Delicatessen</i>
-      </a>
+    <!-- Left: Logo and Brand -->
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+      <img src="./img/max_deli_logo.png" alt="Max’s Deli Logo" height="48" class="me-2">
+      <span class="fst-italic">Max’s Delicatessen</span>
+    </a>
 
-      <!-- Right: Menu Links -->
-      <div class="d-flex align-items-center">
-        <ul class="navbar-nav flex-row">
-          <li class="nav-item me-3">
-            <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class=" nav-link active" target="_blank" href="./dailySpecial.html">
-              <p class="flashing-banner">
-                🔥 Daily Specials!! 🔥
-              </p>
-            </a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link active" href="#map"><i class="fas fa-phone"></i></a>
-          </li>
-        </ul>
-      </div>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <!-- Right Menu Links -->
+    <div class="navbar-brand collapse navbar-collapse justify-content-end" id="navbarContent">
+      <ul class="navbar-nav align-items-center gap-2 mt-3 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./dailySpecial.html">
+            <span class="flashing-banner badge bg-danger text-white">
+              🔥 Daily Specials!! 🔥
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <div class="jumbotron">
     <div class="brand-container">
@@ -110,23 +111,32 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="feature-card">
-            <i class="fas fa-motorcycle feature-icon"></i>
-            <h3>Third-Party Delivery</h3>
-            <p>
-              Enjoy Max's Delicatessen delivered to your door through
-              trusted delivery partners whenever you're craving a
-              delicious meal.
-            </p>
+        <!-- Card 3: Third-Party Delivery -->
+<div class="col-lg-4 col-md-6">
+  <div class="feature-card d-flex flex-column align-items-center justify-content-between">
+    <div>
+      <i class="fas fa-motorcycle feature-icon"></i>
+      <h3>Third-Party Delivery</h3>
+      <p>
+        Enjoy Max's Delicatessen delivered straight to your door through
+        your favorite delivery partners.
+      </p>
+    </div>
 
-            <div class="delivery-icons">
-              <img src="./img/GrubHub.png" alt="Grubhub">
-              <img src="./img/uberEats.png" alt="UberEats">
-              <img src="./img/DoorDash.png" alt="DoorDash">
-            </div>
-          </div>
-        </div>
+    <!-- Active Clickable Delivery Badges -->
+    <div class="delivery-links-wrapper w-100 mt-3">
+      <a href="https://grubhub.com/restaurant/maxs-delicatessen-1484-nj-23-wayne/15067224" target="_blank" class="delivery-badge-btn me-2 mb-2" title="Order on Grubhub">
+        <img src="./img/GrubHub.png" alt="Grubhub">
+      </a>
+      <a href="YOUR_UBEREATS_URL_HERE" target="_blank" class="delivery-badge-btn me-2 mb-2" title="Order on UberEats">
+        <img src="./img/uberEats.png" alt="UberEats">
+      </a>
+      <a href="YOUR_DOORDASH_URL_HERE" target="_blank" class="delivery-badge-btn mb-2" title="Order on DoorDash">
+        <img src="./img/DoorDash.png" alt="DoorDash">
+      </a>
+    </div>
+  </div>
+</div>
       </div>
     </div>
   </section>
@@ -295,14 +305,13 @@
               <i class="fab fa-facebook-square fa-2x"></i>
             </a>
 
-            <a href="#" target="_blank" class="text-dark me-3" aria-label="Instagram">
+            <a href="https://www.instagram.com/themaxsdeli/" target="_blank" class="text-dark me-3" aria-label="Instagram">
               <i class="fab fa-instagram-square fa-2x"></i>
             </a>
             
-            <a href="#" target="_blank" class="text-dark me-3" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@maxsdeliwayne" target="_blank" class="text-dark me-3" aria-label="TikTok">
               <i class="fab fa-youtube-square fa-2x"></i>
             </a>
-
           </div>
         </div>
 
@@ -310,7 +319,6 @@
         <!-- Contact -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Contact Us</h5>
-
           <p class="mb-2">
             <i class="fas fa-envelope me-2"></i>
             <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">
@@ -344,7 +352,7 @@
 
           <p class="mb-2">
             <i class="fas fa-clock me-2"></i>
-            Mon - Fri: 6:00 AM - 6:00 PM
+            Mon - Fri: 6:00 AM - 5:00 PM
           </p>
 
           <p class="mb-3">
@@ -354,14 +362,40 @@
         </div>
       </div>
 
+        <!-- Footer Hours & Online Ordering -->
+     <div class="col-md-12 mb-12 text-center">
+      <h5 class="fw-bold">Order for Delivery</h5>
+      <p class="small text-muted mb-3">Order directly from our partners:</p>
+      
+      <div class="d-flex gap-2 flex-wrap justify-content-center align-items-center">
+        <a href="https://grubhub.com/restaurant/maxs-delicatessen-1484-nj-23-wayne/15067224" target="_blank" class="btn btn-outline-dark btn-sm fw-bold">
+          Grubhub
+        </a>
+        <a href="YOUR_UBEREATS_URL_HERE" target="_blank" class="btn btn-outline-dark btn-sm fw-bold">
+          UberEats
+        </a>
+        <a href="YOUR_DOORDASH_URL_HERE" target="_blank" class="btn btn-outline-dark btn-sm fw-bold">
+          DoorDash
+        </a>
+      </div>
+    </div>
+    
       <hr>
-
+   
       <div class="text-center">
         <p class="small mb-0 text-muted">
           © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
         </p>
       </div>
-
+      <div class="text-center py-2">
+        <p class="small mb-1 text-muted">
+          © 2026 Max’s Deli | Fresh Food • Catering • Online Ordering
+        </p>
+        <p class="small mb-0 text-muted developer-sig">
+          Developed with ❤️ by <a href="#" target="_blank" class="developer-link">Satyam C</a>
+        </p>
+      </div>
+      
     </div>
   </footer>
 

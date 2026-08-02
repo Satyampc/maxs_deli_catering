@@ -57,20 +57,32 @@ footer {
 
 .navbar .nav-link,
 .navbar .navbar-brand {
-  color: #ffffff !important;
-  transition: color 0.35s ease;
+  color: #f8f6ef !important;
+  /* transition: color 0.35s ease; */
+  font-size: 2.15rem !important;
+  font-weight: 600 !important;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .navbar.scrolled .nav-link,
 .navbar.scrolled .navbar-brand {
-  color: #ffffff !important;
+  color:#ff4d4d !important;
 }
 
 p .fName,
 .success,
 .navbar-brand {
-  font-family: Poppins, sans-serif;
+  font-family: cursive;
   color: rgb(48, 44, 44);
+  font-size: 1.35rem !important;
+  font-weight: 700 !important;
+}
+
+.navbar .flashing-banner {
+  position: static !important; /* Removes fixed positioning so it fits naturally in the navbar */
+  margin: 0;
+  padding: 4px 12px;
+  font-size: 1 rem !important;
 }
 
 .success {
@@ -209,14 +221,22 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
+@media (max-width: 991px) {
+  .navbar .navbar-collapse {
+    background-color: transparent;
+    font-size:medium;
+    color: blue;
+    margin-top: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   }
 
-  .navbar .btn {
-    margin-top: 10px;
+  .navbar .navbar-nav {
+    align-items: flex-start !important;
+  }
+
+  .navbar .flashing-banner {
+    display: inline-block;
+    margin-top: 5px;
   }
 }
 
@@ -357,9 +377,7 @@ h2.mb-4 {
 
 .catering-banner {
   background-color: #f9f1e7;
-  /* light warm background */
   color: #a94442;
-  /* dark red/burgundy text */
   font-weight: 600;
   padding: 10px 15px;
   margin-top: 15px;
@@ -451,6 +469,40 @@ h2.mb-4 {
   /* zooms image slightly on hover */
 }
 
+/* Delivery Link Badges Styling */
+.delivery-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.delivery-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.delivery-badge-btn img {
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.delivery-badge-btn:hover {
+  background: #ffffff;
+  border-color: #a8201a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
 .sweet {
   text-decoration: underline;
 }
@@ -533,6 +585,23 @@ h2.mb-4 {
     right: 10px;
     font-size: 14px;
     padding: 8px 16px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .btn {
+    margin-top: 10px;
+  }
+
+  .jumbotron {
+
+  }
+
+  .brand-container {
+    margin-top: 40px;
   }
 }
 
