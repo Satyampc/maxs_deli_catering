@@ -225,7 +225,7 @@ footer {
   .navbar .navbar-collapse {
     background-color: transparent;
     font-size:medium;
-    color: blue;
+    color: rgb(144, 144, 184);
     margin-top: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   }
@@ -596,12 +596,9 @@ h2.mb-4 {
     margin-top: 10px;
   }
 
-  .jumbotron {
-
-  }
-
   .brand-container {
     margin-top: 40px;
+    bottom: 8% !important;
   }
 }
 
@@ -722,6 +719,7 @@ h2.mb-4 {
 }
 
 /* Header Container Styling */
+/* Container positioned at the bottom of Jumbotron */
 .brand-container {
   display: flex;
   flex-direction: column;
@@ -731,8 +729,34 @@ h2.mb-4 {
   font-family: 'Georgia', serif;
   max-width: 700px;
   width: 100%;
-  position: relative;
-  z-index: 2;
+  position: absolute !important; /* Overrides flexbox positioning */
+  bottom: 12% !important;        /* Distance from bottom of banner - adjust this % to move higher/lower */
+  left: 50%;
+  transform: translateX(-50%);   /* Perfectly centers horizontally */
+  z-index: 5;
+}
+
+/* Order Now / Browse Now Button Styling */
+.order-btn {
+  display: inline-block;
+  transform: translateY(80px); 
+  padding: 16px 36px;
+  background: #a8201a;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, .25);
+}
+
+.order-btn:hover {
+  background-color: #801813;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
 }
 
 .brand-title {
@@ -855,31 +879,53 @@ h2.mb-4 {
   transform: scale(1.1);
 }
 
-/*=========================*/
-
-/* Order Now Button Styling */
-.order-btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 16px 36px;
-  background: #a8201a;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  border-radius: 50px;
-  transition: .3s;
-  box-shadow: 0 5px 12px rgba(0, 0, 0, .25);
+/* Floating Scroll Toggle Button */
+#scrollToggleBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: #a8201a; /* Matches deli brand red */
+  color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-size: 3.2rem;
+  
+  /* Hidden by default until 25% scroll */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity 0.35s ease, visibility 0.35s ease, transform 0.35s ease, background-color 0.25s ease;
 }
 
-/* Button Hover State */
+/* Shown state when 25% scrolled */
+#scrollToggleBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hover State */
+#scrollToggleBtn:hover {
+  background-color: #801813;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/*=========================*/
+
+
+
+/* Updated Hover State to keep the lower position when hovered */
 .order-btn:hover {
   background-color: #801813;
-  /* Darker red on hover */
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-  transform: translateY(-2px);
+  transform: translateY(76px); /* Keeps the button low while giving a slight lift effect */
 }
 
 /* Media for Jumbotron */
@@ -899,9 +945,14 @@ h2.mb-4 {
   }
 
   .order-btn {
-    width: 160px;
+    transform: translateY(40px); /* Lower shift for small screens */
+    width: 180px;
     padding: 12px 20px;
     font-size: .95rem;
+  }
+
+  .order-btn:hover {
+    transform: translateY(38px);
   }
 }
 
