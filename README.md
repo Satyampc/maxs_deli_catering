@@ -3,7 +3,7 @@
 A modern, fast, and fully responsive web application built for **Max’s Delicatessen** located in Wayne, NJ. The site provides customers with quick access to daily specials, full catering options, direct telephone contact, and online third-party delivery options[cite: 1].
 
 ## 🚀 Live Demo
-🌐 **[View Max's Deli Live Site](https://satyampc.github.io/maxs_deli_catering/)**
+🌐 **[View Max's Deli Live Site](https://themaxsdeli.com)**
 
 ---
 
