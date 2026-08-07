@@ -33,10 +33,10 @@ A modern, fast, and fully responsive web application built for **Max’s Delicat
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/satyampc/maxs_deli_catering.git](https://github.com/satyampc/maxs_deli_catering.git)
+   git clone [https://github.com/Sampc/maxs_deli_catering.git](https://github.com/Sampc/maxs_deli_catering.git)
 
 ## License
 MIT
 
 👨‍💻 Developed By
-Designed and developed with ❤️ by Satyam C.
+Designed and developed with ❤️ by Sam C.
