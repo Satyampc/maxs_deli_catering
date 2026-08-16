@@ -119,7 +119,7 @@ p .fName,
 
 .jumbotron::before {
   content: "";
-  position: absolrelativeute;
+  position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .20);
 }
@@ -156,10 +156,10 @@ footer {
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
+}
 
-  &:hover {
-    color: #dbd8eb;
-  }
+.footer-container a:hover {
+  color: #dbd8eb;
 }
 
 .footer-container ul {
