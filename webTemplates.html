@@ -121,7 +121,7 @@
                         <div class="template-body">
 
                             <h3>Restaurant & Deli</h3>
-                            
+
                             <div class="template-for">
                                 Perfect for restaurants, delis & cafés
                             </div>
@@ -144,8 +144,6 @@
 
                             <div class="template-actions">
                                 <a href="./templates/restaurantTemp.html" class="demo-btn">View Demo</a>
-                                <a href="mailto:themaxsdeli@gmail.com?subject=Restaurant%20Template%20Purchase"
-                                    class="buy-btn">Buy Now</a>
                             </div>
                         </div>
 
@@ -186,8 +184,6 @@
 
                             <div class="template-actions">
                                 <a href="./templates/contractTemplate.html" class="demo-btn">View Demo</a>
-                                <a href="mailto:themaxsdeli@gmail.com?subject=Contractor%20Template%20Purchase"
-                                    class="buy-btn">Buy Now</a>
                             </div>
                         </div>
 
@@ -228,8 +224,6 @@
 
                             <div class="template-actions">
                                 <a href="./templates/salonTemplate.html" class="demo-btn">View Demo</a>
-                                <a href="mailto:themaxsdeli@gmail.com?subject=Salon%20Template%20Purchase"
-                                    class="buy-btn">Buy Now</a>
                             </div>
                         </div>
 
@@ -270,8 +264,6 @@
 
                             <div class="template-actions">
                                 <a href="./templates/cleaningTemplate.html" class="demo-btn">View Demo</a>
-                                <a href="mailto:themaxsdeli@gmail.com?subject=Cleaning%20Template%20Purchase"
-                                    class="buy-btn">Buy Now</a>
                             </div>
                         </div>
 
@@ -308,13 +300,11 @@
                             </ul>
 
                             <div class="template-price">
-                                $39 <small>one-time</small>
+                                $49 <small>one-time</small>
                             </div>
 
                             <div class="template-actions">
-                                <a href="#" class="demo-btn">View Demo</a>
-                                <a href="mailto:themaxsdeli@gmail.com?subject=Small%20Business%20Template%20Purchase"
-                                    class="buy-btn">Buy Now</a>
+                                <a href="./templates/smallBusiTemplate.html" class="demo-btn">View Demo</a>
                             </div>
                         </div>
 
@@ -350,10 +340,10 @@
                     <div><i class="fas fa-check-circle"></i> Online ordering / booking links</div>
                 </div>
 
-                <a href="mailto:themaxsdeli@gmail.com?subject=Website%20Setup%20Service" class="template-hero-btn">
+                <button type="button" class="template-hero-btn" data-bs-toggle="modal" data-bs-target="#orderModal">
                     <i class="fas fa-envelope me-2"></i>
                     Get Started
-                </a>
+                </button>
 
             </div>
         </section>
@@ -473,6 +463,99 @@
     <button id="scrollToggleBtn" aria-label="Scroll to Top" title="Back to Top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+
+    <!-- Web Template Order Form -->
+    <div class="modal fade custom-order-modal" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <div class="w-100 text-center">
+                        <h4 class="modal-title fw-bold" id="orderModalLabel">Get Started with Your Web Template</h4>
+                        <p class="text-muted small mb-0">Fill in your business details below and we'll reach out to set
+                            up your site.</p>
+                    </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <form id="orderForm" action="https://formspree.io/f/xjkoezpz" method="POST">
+
+                        <!-- Form Subject / Title -->
+                        <input type="hidden" name="_subject" value="Web Template Inquiry">
+                        <!-- Name & Email -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label fw-semibold required-label">Full Name</label>
+                                <input type="text" name="fullName" id="fullName" class="form-control"
+                                    placeholder="Jane Doe" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-semibold required-label">Email Address</label>
+                                <input type="email" name="email" id="email" class="form-control"
+                                    placeholder="jane@company.com" required>
+                            </div>
+                        </div>
+
+                        <!-- Business Name & Phone -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="businessName" class="form-label fw-semibold required-label">Business /
+                                    Company Name</label>
+                                <input type="text" name="businessName" id="businessName" class="form-control"
+                                    placeholder="Acme Inc." required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="phone" class="form-label fw-semibold required-label">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" class="form-control"
+                                    placeholder="(555) 000-0000" required>
+                            </div>
+                        </div>
+
+                        <!-- Existing Site & Target Launch Timeline -->
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="existingWebsite" class="form-label fw-semibold">Current Website <span
+                                        class="text-muted fw-normal">(Optional)</span></label>
+                                <input type="url" name="existingWebsite" id="existingWebsite" class="form-control"
+                                    placeholder="https://example.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="timeline" class="form-label fw-semibold required-label">Desired Launch
+                                    Timeline</label>
+                                <select name="timeline" id="timeline" class="form-select" required>
+                                    <option value="" selected disabled>Select estimated timeline</option>
+                                    <option value="ASAP">ASAP (Within 1 week)</option>
+                                    <option value="1-2 Weeks">1 - 2 Weeks</option>
+                                    <option value="1 Month">Within 1 Month</option>
+                                    <option value="Exploring Options">Just exploring options</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Project Details -->
+                        <div class="mb-4">
+                            <label for="message" class="form-label fw-semibold required-label">Project Details &
+                                Specific Requirements</label>
+                            <textarea name="message" id="message" class="form-control" rows="4"
+                                placeholder="Tell us about your project, preferred colors, features you need (e.g., contact forms, booking system, online store), or any questions you have."
+                                required></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="btn btn-primary w-100 py-2 fw-bold text-uppercase modal-submit-btn">
+                            Request Setup
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </body>
 

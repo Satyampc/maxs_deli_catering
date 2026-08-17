@@ -1348,6 +1348,65 @@ h2.mb-4 {
   transform: translateY(76px); /* Keeps the button low while giving a slight lift effect */
 }
 
+/* Smooth Modal Animation & Backdrop */
+.custom-order-modal .modal-dialog {
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.custom-order-modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+/* Card Styling */
+.custom-order-modal .modal-content {
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Clean Form Inputs */
+.custom-order-modal .form-control,
+.custom-order-modal .form-select {
+  border-radius: 10px;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9fb;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-order-modal .form-control:focus,
+.custom-order-modal .form-select:focus {
+  background-color: #fff;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
+}
+
+/* Button Improvements */
+.custom-order-modal .modal-submit-btn {
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.custom-order-modal .modal-submit-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+.custom-order-modal .modal-submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Red Asterisk for Required Fields */
+.required-label::after {
+  content: " *";
+  color: #dc3545; /* Bootstrap danger red */
+  font-weight: bold;
+}
+
 /* Media for Jumbotron */
 @media (max-width:768px) {
 
