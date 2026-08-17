@@ -39,4 +39,4 @@ A modern, fast, and fully responsive web application built for **Max’s Delicat
 MIT
 
 👨‍💻 Developed By
-Designed and developed with ❤️ by Satyam C.
+Designed and developed with ❤️ by Sam C.
