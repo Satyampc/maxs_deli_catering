@@ -1442,8 +1442,8 @@ h2.mb-4 {
 }
 
 .special-image {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 250px;
   min-width: 100px;
   object-fit: cover;
   border-radius: 8px;
