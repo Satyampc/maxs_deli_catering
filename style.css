@@ -1434,6 +1434,22 @@ h2.mb-4 {
     transform: translateY(38px);
   }
 }
+.special-item {
+  display: flex;
+  align-items: center; /* Aligns image and text vertically */
+  gap: 16px;          /* Adds spacing between image and text */
+}
+
+.special-image {
+  width: 150px;       /* Set a fixed thumbnail size */
+  height: 150px;      
+  object-fit: cover;  /* Prevents the image from stretching */
+  border-radius: 8px;
+}
+
+.special-content {
+  flex: 1;            /* Allows text area to fill remaining space */
+}
 
 @keyframes fadeout {
   from {
