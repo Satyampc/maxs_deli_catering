@@ -1436,19 +1436,21 @@ h2.mb-4 {
 }
 .special-item {
   display: flex;
-  align-items: center; /* Aligns image and text vertically */
-  gap: 16px;          /* Adds spacing between image and text */
+  align-items: center;
+  gap: 16px;
+  width: 100%;
 }
 
 .special-image {
-  width: 150px;       /* Set a fixed thumbnail size */
-  height: 150px;      
-  object-fit: cover;  /* Prevents the image from stretching */
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  object-fit: cover;
   border-radius: 8px;
 }
 
 .special-content {
-  flex: 1;            /* Allows text area to fill remaining space */
+  flex: 1;
 }
 
 @keyframes fadeout {
