@@ -1434,6 +1434,7 @@ h2.mb-4 {
     transform: translateY(38px);
   }
 }
+
 .special-item {
   display: flex;
   align-items: center;
@@ -1451,6 +1452,30 @@ h2.mb-4 {
 
 .special-content {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  .special-item {
+    gap: 12px;
+  }
+
+  .special-image {
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+  }
+
+  .special-name {
+    font-size: 1rem;
+  }
+
+  .special-description {
+    font-size: 0.85rem;
+  }
+
+  .special-price {
+    font-size: 0.9rem;
+  }
 }
 
 @keyframes fadeout {
