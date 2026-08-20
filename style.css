@@ -292,10 +292,6 @@ footer {
   text-align: center;
 }
 
-.special-item {
-  margin-bottom: 2rem;
-}
-
 .special-description {
   font-style: italic;
   color: #555;
@@ -340,19 +336,6 @@ h2.mb-4 {
   margin-right: auto;
 }
 
-.special-item {
-  background: #ffffff;
-  border-left: 6px solid #d9534f;
-  padding: 15px 20px;
-  margin-bottom: 18px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-.special-item:hover {
-  background-color: #ffe6e1;
-  border-left-color: #a6362a;
-}
 
 .special-name {
   font-weight: 700;
@@ -711,12 +694,6 @@ h2.mb-4 {
   padding-bottom: 8px;
 }
 
-.special-item {
-  margin: 12px 0;
-  padding: 10px;
-  background: #ffffff;
-  border-radius: 5px;
-}
 
 /* Header Container Styling */
 /* Container positioned at the bottom of Jumbotron */
@@ -1440,41 +1417,66 @@ h2.mb-4 {
   align-items: center;
   gap: 16px;
   width: 100%;
+
+  margin: 12px 0;
+  margin-bottom: 18px;
+
+  padding: 15px 20px;
+
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 6px solid #d9534f;
+
+  transition: background-color 0.3s ease;
+}
+
+.special-item:hover {
+  background-color: #ffe6e1;
+  border-left-color: #a6362a;
 }
 
 .special-image {
   width: 250px;
   height: 250px;
-  min-width: 100px;
+  min-width: 250px;
+  max-width: 250px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .special-content {
   flex: 1;
+  min-width: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
   .special-item {
-    gap: 12px;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
   }
 
   .special-image {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
+    width: 85px;
+    height: 85px;
+    min-width: 85px;
+    max-width: 85px;
+    flex: 0 0 85px;
   }
 
   .special-name {
-    font-size: 1rem;
+    font-size: 15px;
+    line-height: 1.2;
   }
 
   .special-description {
-    font-size: 0.85rem;
+    font-size: 13px;
+    line-height: 1.3;
   }
 
   .special-price {
-    font-size: 0.9rem;
+    font-size: 13px;
   }
 }
 
