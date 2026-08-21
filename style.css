@@ -1480,6 +1480,16 @@ h2.mb-4 {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .special-image {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+    flex: 0 0 60px !important;
+  }
+}
+
 @keyframes fadeout {
   from {
     opacity: 1;
