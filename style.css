@@ -5,6 +5,7 @@ body {
 
 footer {
   background-color: #f5e6c8 !important;
+  padding: 25px;
 }
 
 .active {
@@ -138,9 +139,7 @@ p .fName,
   height: 250px;
 }
 
-footer {
-  padding: 25px;
-}
+
 
 .footer-container {
   border-radius: 45px;
@@ -273,25 +272,6 @@ footer {
   font-size: 20px;
 }
 
-.catering-banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100px;
-  padding: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  background-color: #d9230f;
-}
-
-.specials-container {
-  max-width: 700px;
-  margin: 100px auto 50px;
-  text-align: center;
-}
-
 .special-description {
   font-style: italic;
   color: #555;
@@ -311,12 +291,12 @@ footer {
 
 .specials-container {
   max-width: 700px;
-  margin: 40px auto;
+  margin: 100px auto 50px;
   padding: 20px;
   background: #fff8f0;
-  /* soft warm background */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -359,14 +339,18 @@ h2.mb-4 {
 }
 
 .catering-banner {
-  background-color: #f9f1e7;
-  color: #a94442;
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 10px 15px;
   margin-top: 15px;
-  border-radius: 8px;
   font-size: 0.95rem;
+  font-weight: 600;
   line-height: 1.4;
+  color: #a94442;
+  background-color: #f9f1e7;
+  border-radius: 8px;
   word-wrap: break-word;
   white-space: normal;
 }
@@ -397,13 +381,12 @@ h2.mb-4 {
 }
 
 .flashing-banner {
-  position: fixed;
+position: fixed;
   top: 80px;
-  /* Default top space */
   right: 20px;
   z-index: 9999;
   background-color: #ff0000;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
@@ -412,12 +395,12 @@ h2.mb-4 {
 }
 
 .flashing-ban {
-  /* position: fixed; */
+position: fixed;
   top: 80px;
-  /* Default top space */
   right: 20px;
   z-index: 9999;
   background-color: #ff0000;
+  color: #ffffff;
   padding: 10px 20px;
   border-radius: 10px;
   font-weight: bold;
@@ -728,12 +711,6 @@ h2.mb-4 {
   border-radius: 50px;
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 12px rgba(0, 0, 0, .25);
-}
-
-.order-btn:hover {
-  background-color: #801813;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-  transform: translateY(-2px);
 }
 
 .brand-title {
@@ -1322,7 +1299,7 @@ h2.mb-4 {
 .order-btn:hover {
   background-color: #801813;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
-  transform: translateY(76px); /* Keeps the button low while giving a slight lift effect */
+  transform: translateY(76px);
 }
 
 /* Smooth Modal Animation & Backdrop */
@@ -1412,29 +1389,6 @@ h2.mb-4 {
   }
 }
 
-.special-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  width: 100%;
-
-  margin: 12px 0;
-  margin-bottom: 18px;
-
-  padding: 15px 20px;
-
-  background: #ffffff;
-  border-radius: 8px;
-  border-left: 6px solid #d9534f;
-
-  transition: background-color 0.3s ease;
-}
-
-.special-item:hover {
-  background-color: #ffe6e1;
-  border-left-color: #a6362a;
-}
-
 .special-image {
   width: 250px;
   height: 250px;
@@ -1443,6 +1397,26 @@ h2.mb-4 {
   object-fit: cover;
   border-radius: 8px;
 }
+
+.special-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 12px 0;
+  margin-bottom: 18px;
+  padding: 15px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  border-left: 6px solid #d9534f;
+  transition: background-color 0.3s ease;
+}
+
+.special-item:hover {
+  background-color: #ffe6e1;
+  border-left-color: #a6362a;
+}
+
 
 .special-content {
   flex: 1;
@@ -1481,12 +1455,18 @@ h2.mb-4 {
 }
 
 @media screen and (max-width: 576px) {
+  .special-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .special-image {
-    width: 60px !important;
-    height: 60px !important;
-    min-width: 60px !important;
-    max-width: 60px !important;
-    flex: 0 0 60px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 180px !important;
+    min-width: 0 !important;
+    flex: none !important;
+    object-fit: cover;
   }
 }
 

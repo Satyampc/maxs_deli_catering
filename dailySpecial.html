@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Daily Specials</title>
+  <title>Daily Specials | Max's Delicatessen</title>
   <link rel="icon" href="img/max_deli_logo.png" />
   <link rel="stylesheet" href="./style.css" />
   <script src="./script.js" defer></script>
+
+  <!-- Google Fonts & Font Awesome -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/863a30ca91.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!-- Bootstrap 5 CSS -->
+
+  <!-- Bootstrap 5 CSS & JS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Bootstrap 5 JS (for navbar toggler) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </head>
 
 <body>
 
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid px-4">
 
@@ -37,90 +37,49 @@
       </button>
 
       <!-- Right Menu Links -->
-      <div class="navbar-brand collapse navbar-collapse justify-content-end" id="navbarContent">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
         <ul class="navbar-nav align-items-center gap-2 mt-3 mt-lg-0">
           <li class="nav-item">
             <a class="nav-link active" target="_blank" href="https://themaxsdeli.cloveronline.com/menu/all">Menu</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active d-inline-flex align-items-center gap-1" href="./webTemplates.html">
-              <span class="badge bg-danger rounded-pill ms-1"
-                style="font-size: 0.65rem; vertical-align: middle;">NEW</span>
+              <span class="badge bg-danger rounded-pill ms-1" style="font-size: 0.65rem; vertical-align: middle;">NEW</span>
               <span>Web Templates</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" target="_blank" href="./cateringDetails.html">Catering</a>
           </li>
-
         </ul>
       </div>
+
     </div>
   </nav>
 
+  <!-- Specials Container -->
+  <main class="container specials-container pt-5">
+    <h1 class="mb-4">Today's Specials</h1>
+    <h4 class="mb-2 fst-italic">🌸 Friday, August 21st, 2026 🍁</h4>
 
-  <!-- Specials Section -->
-  <div class="container specials-container pt-5">
-    <h2 class="mb-4">Today's Specials</h2>
-
-
-
-    <h4 class="mb-2">🌸 Friday, August 21st, 2026 🍁</h4>
-
-    </section>
     <br>
-    <!-- <a href="./dailySpecial.html"
-      style="position: fixed; top: 80px; right: 20px; z-index: 10000; text-decoration: none;">
-      <div class="flashing-banner">
-        🔥 🦃 WE HAVE FRESH TURKEY 🦃 🔥
-      </div>
-    
-    </a> -->
 
     <!-- SALADS -->
-    <div>
-      <i>
-        <h1 style="text-align: center; text-decoration: underline; color: red;"> Chef's Salad Specials</h1>
-         </i>
-    </div>
-    <!-- <div class="special-item">
-      <div class="special-name">🥗 Red Skin Potato Salad 🥗</div>
-      <div class="special-description">Creamy potato salad made with tender red skin potatoes and a flavorful dressing.</div>
-      <div class="special-price"> $6.99 pr lb</div>
-    </div> -->
+    <h2 class="text-center text-decoration-underline text-danger fst-italic my-3">Chef's Salad Specials</h2>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Mushroom_Salad.jpeg"
-        alt="Meatloaf with Mashed Potatoes and Vegetables">
+      <img class="special-image" src="./img/Mushroom_Salad.jpeg" alt="Mushroom Salad">
       <div class="special-content">
         <div class="special-name">🥗 Mushroom Salad 🥗</div>
         <div class="special-description">Fresh mushrooms tossed with crisp vegetables and a light, flavorful dressing.</div>
-        <div class="special-price"> $6.99 per lb</div>
+        <div class="special-price">$6.99 per lb</div>
       </div>
     </div>
 
-
-    <!-- <div class="special-item">
-      <div class="special-name">🥗 Chef's Salad 🥗</div>
-      <div class="special-description"> Fresh garden greens topped with turkey, ham, cheese, tomatoes, cucumbers, and
-        hard-boiled egg.</div>.
-      <div class="special-price">Bowl 🥗 - $11.95</div>
-    </div>
-
-    <div class="special-item">
-      <div class="special-name">🥗 Garden Salad Salad 🥗</div>
-      <div class="special-description">Crisp lettuce topped with fresh tomatoes, cucumbers, onions, carrots, and
-        seasonal vegetables.</div>
-      <div class="special-price">Bowl 🥗 - $10.95</div>
-    </div> -->
-
     <hr>
 
-    <div>
-      <i>
-        <h1 style="text-align: center; text-decoration: underline; color: red;">SOUPS OF THE DAY</h1>
-      </i>
-    </div>
+    <!-- SOUPS -->
+    <h2 class="text-center text-decoration-underline text-danger fst-italic my-3">SOUPS OF THE DAY</h2>
 
     <div class="special-item">
       <img class="special-image" src="./img/split-pea-soup.jpg" alt="Split Pea Soup">
@@ -147,26 +106,20 @@
     </div>
 
     <br>
-
-    <!-- Fresh Turkey -->
-    <!-- <div class="special-item">
-      <h1 class="special-name">🦃 WE HAVE FRESH TURKEY 🦃</h1>
-    </div>
-    <hr> -->
-
     <hr>
-    <div>
+
+    <div class="text-center">
       <a href="https://themaxsdeli.cloveronline.com/menu/all#Daily%20Specials" target="_blank"
         class="btn btn-danger ms-3 align-items-center">
-        <i class="bi bi-bag-fill me-1"></i> Order Now
+        <i class="fa-solid fa-bag-shopping me-1"></i> Order Now
       </a>
     </div>
+
     <hr>
-    <i>
-      <h1 style="text-align: center; text-decoration: underline; color: rgb(19, 161, 150);">SPECIALS</h1>
-    </i>
+    <h2 class="text-center text-decoration-underline fst-italic my-3" style="color: rgb(19, 161, 150);">SPECIALS</h2>
     <hr>
 
+    <!-- HOT SPECIALS -->
     <div class="special-item">
       <img class="special-image" src="./img/Eggplant Parmesan.jpeg" alt="Eggplant Parmesan">
       <div class="special-content">
@@ -177,7 +130,7 @@
     </div>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Fried Cod fish Sandwich.jpeg" alt="Fried Cod fish Sandwich">
+      <img class="special-image" src="./img/Fried Cod fish Sandwich.jpeg" alt="Fried Cod Fish Sandwich">
       <div class="special-content">
         <div class="special-name">🐠 Fried Cod fish Sandwich 🐟</div>
         <div class="special-description">Crispy fried cod fillet w/ lettuce, tomato, & tangy tartar sauce on a bread of your choice*.</div>
@@ -186,7 +139,7 @@
     </div>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Meatloaf w Gravy.jpg" alt="Meatloaf w/Mashed Potatoes & Vegetable">
+      <img class="special-image" src="./img/Meatloaf w Gravy.jpg" alt="Meatloaf with Mashed Potatoes & Vegetable">
       <div class="special-content">
         <div class="special-name">🥩 Meatloaf w/Mashed Potatoes & Vegetable 🥕</div>
         <div class="special-description">Homestyle meatloaf, rich brown gravy served w/ mashed potatoes &/or vegetables.</div>
@@ -195,7 +148,7 @@
     </div>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Chicken Francaise - Platter.jpeg" alt="Chicken Francaise - Platter">
+      <img class="special-image" src="./img/Chicken Francaise - Platter.jpeg" alt="Chicken Francaise Platter">
       <div class="special-content">
         <div class="special-name">🐔 Chicken Francaise in 🍋Lemon Sauce</div>
         <div class="special-description">Lightly battered chicken sautéed in a tangy lemon-butter sauce, served as a platter or *Sandwich.</div>
@@ -213,18 +166,16 @@
     </div>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Homestyle Breaded Chicken Platter.jpg"
-        alt="Homestyle Breaded Chicken Cutlet ">
+      <img class="special-image" src="./img/Homestyle Breaded Chicken Platter.jpg" alt="Homestyle Breaded Chicken Cutlet">
       <div class="special-content">
-        <div class="special-name">🍗 Homestyle Breaded Chicken Cutlet  🍗</div>
+        <div class="special-name">🍗 Homestyle Breaded Chicken Cutlet 🍗</div>
         <div class="special-description">Crispy breaded chicken cutlet served as a Platter or *Sandwich.</div>
         <div class="special-price">*Sandwich $10.45 / Platter $11.45</div>
       </div>
     </div>
 
     <div class="special-item">
-      <img class="special-image" src="./img/Tuna salad wrap.jpg"
-        alt="Tuna Fish Salad Wrap">
+      <img class="special-image" src="./img/Tuna salad wrap.jpg" alt="Tuna Fish Salad Wrap">
       <div class="special-content">
         <div class="special-name">🎣 Tuna Fish Salad Wrap 🌯</div>
         <div class="special-description">Fresh tuna salad wrapped with lettuce, tomato, and your choice of cheese.</div>
@@ -232,52 +183,25 @@
       </div>
     </div>
 
-    <div>
+    <div class="text-center my-3">
       <a href="https://themaxsdeli.cloveronline.com/menu/all#Daily%20Specials" target="_blank"
         class="btn btn-danger ms-3 align-items-center">
-        <i class="bi bi-bag-fill me-1"></i> Order Now
+        <i class="fa-solid fa-bag-shopping me-1"></i> Order Now
       </a>
     </div>
     <br>
 
-    <!-- 🍮 RICE PUDDING 🍮 -->
-    <i>
-      <h3 class="sweet">Dessert</h3>
-    </i>
+    <!-- DESSERT -->
+    <h3 class="sweet text-center fst-italic">Dessert</h3>
     <div class="special-item">
-         <img class="special-image" src="./img/Rice Pudding.jpeg">
-            <div class="special-content">
-      <div class="special-name">🍮 RICE PUDDING 🍮</div>
-      <div class="special-description">Slow-cooked rice blended with sweet cream and warm spices for a cozy, homemade
-        treat.</div>
-      <div class="special-price">$6.45 per lb</div>
+      <img class="special-image" src="./img/Rice Pudding.jpeg" alt="Rice Pudding">
+      <div class="special-content">
+        <div class="special-name">🍮 RICE PUDDING 🍮</div>
+        <div class="special-description">Slow-cooked rice blended with sweet cream and warm spices for a cozy, homemade treat.</div>
+        <div class="special-price">$6.45 per lb</div>
       </div>
     </div>
-
-  </div>
-
-  <!-- FORM -->
-  <!-- <form id="orderForm" action="https://formspree.io/f/xjkoezpz" method="POST" class="p-4 border rounded"
-        style="max-width: 500px; margin: auto;">
-        <h5 class="text-center mb-3">Send Us Your Order</h5>
-
-        <div class="mb-3">
-          <label for="phone" class="form-label">Your Phone Number</label>
-          <input type="tel" name="phone" id="phone" class="form-control" required pattern="[0-9]{10}"
-            placeholder="1234567890">
-        </div>
-
-        <div class="mb-3">
-          <label for="message" class="form-label">Please Type Your Order (online ordering coming soon!!)</label>
-          <textarea name="message" id="message" class="form-control" rows="4" required></textarea>
-          <small class="form-text text-muted">
-            When placing your order, please include any special instructions like: Salt/Pepper, Ketchup,
-            Lettuce/Tomato/Mayo, etc.
-          </small>
-        </div>
-
-        <button type="submit" class="btn btn-primary w-100">Send</button>
-      </form> -->
+  </main>
 
   <!-- Google Map -->
   <div class="container text-center mb-5">
@@ -290,7 +214,6 @@
   <!-- FOOTER -->
   <footer class="bg-light text-dark py-5 mt-5 border-top">
     <div class="container">
-
       <div class="row text-center text-md-start">
 
         <!-- Brand / About -->
@@ -313,34 +236,26 @@
             </a>
 
             <a href="https://www.tiktok.com/@maxsdeliwayne" target="_blank" class="text-dark me-3" aria-label="TikTok">
-              <i class="fab fa-youtube-square fa-2x"></i>
+              <i class="fab fa-tiktok fa-2x"></i>
             </a>
           </div>
         </div>
-
 
         <!-- Contact -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Contact Us</h5>
           <p class="mb-2">
             <i class="fas fa-envelope me-2"></i>
-            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">
-              themaxsdeli@gmail.com
-            </a>
+            <a href="mailto:themaxsdeli@gmail.com" class="text-dark text-decoration-none">themaxsdeli@gmail.com</a>
           </p>
-
           <p class="mb-2">
             <i class="fas fa-phone me-2"></i>
-            <a href="tel:+19736943163" class="text-dark text-decoration-none">
-              (973) 694-3163
-            </a>
+            <a href="tel:+19736943163" class="text-dark text-decoration-none">(973) 694-3163</a>
           </p>
-
           <p class="mb-2">
             <i class="fas fa-fax me-2"></i>
             973-694-4690
           </p>
-
           <p>
             <i class="fas fa-map-marker-alt me-2"></i>
             1484 Route 23<br>
@@ -348,16 +263,13 @@
           </p>
         </div>
 
-
-        <!-- Hours / Ordering -->
+        <!-- Hours -->
         <div class="col-md-4 mb-4">
           <h5 class="fw-bold">Visit Us</h5>
-
           <p class="mb-2">
             <i class="fas fa-clock me-2"></i>
             Mon - Fri: 6:00 AM - 5:00 PM
           </p>
-
           <p class="mb-3">
             <i class="fas fa-clock me-2"></i>
             Sat: 7:00 AM - 3:00 PM
@@ -365,25 +277,24 @@
         </div>
       </div>
 
-      <!-- Footer Hours & Online Ordering -->
-      <div class="col-md-12 mb-12 text-center">
+      <!-- Online Ordering Links -->
+      <div class="col-md-12 text-center mt-3">
         <h5 class="fw-bold">Order for Delivery</h5>
         <p class="small text-muted mb-3">Order directly from our partners:</p>
 
         <div class="delivery-links-wrapper w-100 mt-3">
           <a href="https://grubhub.com/restaurant/maxs-delicatessen-1484-nj-23-wayne/15067224" target="_blank"
             class="delivery-badge-btn me-2 mb-2" title="Order on Grubhub">
-            GrubHub:- > <img src="./img/GrubHub.png" alt="Grubhub">
+            GrubHub <img src="./img/GrubHub.png" alt="Grubhub Order Online">
           </a>
           <a href="https://www.order.store/store/maxs-delicatessen-1484-new-jersey-23/a7KoXjPyWLquJHBzbHyqpg"
             target="_blank" class="delivery-badge-btn me-2 mb-2" title="Order on UberEats">
-            UberEats:- > <img src="./img/uberEats.png" alt="UberEats">
+            UberEats <img src="./img/uberEats.png" alt="UberEats Order Online">
           </a>
-          <a href="YOUR_DOORDASH_URL_HERE" target="_blank" class="delivery-badge-btn mb-2" title="Order on DoorDash">
-            DoorDash:- > <img src="./img/DoorDash.png" alt="DoorDash">
+          <a href="#" target="_blank" class="delivery-badge-btn mb-2" title="Order on DoorDash">
+            DoorDash <img src="./img/DoorDash.png" alt="DoorDash Order Online">
           </a>
         </div>
-
 
         <hr>
 
@@ -394,9 +305,9 @@
           <p class="small mb-0 text-muted developer-sig">
             Developed with ❤️ by Sam C
           </p>
-          <p class="small mb-1 text-muted">© 2026 Max's Web Templates. All Rights Reserved.</p>
         </div>
       </div>
+    </div>
   </footer>
 
 </body>
