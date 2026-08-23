@@ -1396,6 +1396,7 @@ position: fixed;
   max-width: 250px;
   object-fit: cover;
   border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .special-item {
@@ -1403,7 +1404,7 @@ position: fixed;
   align-items: center;
   gap: 16px;
   width: 100%;
-  margin: 12px 0;
+  /* margin: 12px 0; */
   margin-bottom: 18px;
   padding: 15px 20px;
   background: #ffffff;
@@ -1432,11 +1433,11 @@ position: fixed;
   }
 
   .special-image {
-    width: 85px;
-    height: 85px;
-    min-width: 85px;
-    max-width: 85px;
-    flex: 0 0 85px;
+    width: 90px;
+    height: 90px;
+    min-width: 90px;
+    max-width: 90px;
+    flex: 0 0 90px;
   }
 
   .special-name {
