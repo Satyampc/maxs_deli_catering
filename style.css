@@ -1425,15 +1425,20 @@ position: fixed;
 }
 
 .hero-header {
-  min-height: 50dvh; /* dvh adjusts automatically for mobile address bars */
   position: relative;
-  overflow: hidden;
+  width: 100%;
+  
+  /* Fits dynamic viewport height on iOS/Android, falling back to 80vh */
+  height: 80vh;
+  height: 80dvh; 
+  min-height: 480px;
+  max-height: 850px;
   display: flex;
   align-items: center;
-  margin-top: 1rem;
   justify-content: center;
-  padding-top: 18rem;    /* Ensures spacing below fixed navbar */
-  padding-bottom: 5rem;
+  overflow: hidden;
+  padding-top: 70px; 
+  padding-bottom: 20px;
   background-color: #000;
 }
 
@@ -1460,15 +1465,28 @@ position: fixed;
   background: rgba(0, 0, 0, 0.55);
   z-index: 2;
 }
-/* Scale down title size on mobile viewports */
+
+/* Responsive adjustments for any phone screen sizes */
 @media (max-width: 768px) {
-  .hero-header h1 {
-    font-size: 2rem !important; /* Prevents overflow on mobile screens */
+  .hero-header {
+    height: 75dvh; /* Reduces height slightly on phones so next section is visible */
+    min-height: 420px;
   }
-  
+
+  .hero-header h1 {
+    font-size: 1.8rem !important; /* Prevents large text from pushing container boundaries */
+    line-height: 1.2;
+    margin-bottom: 1rem !important;
+  }
+
   .hero-header .badge {
     font-size: 0.75rem !important;
-    white-space: normal; /* Allows badge text to wrap cleanly if needed */
+    padding: 6px 12px !important;
+  }
+
+  .hero-header .btn {
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
   }
 }
 
