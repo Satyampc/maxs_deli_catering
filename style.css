@@ -1425,14 +1425,15 @@ position: fixed;
 }
 
 .hero-header {
-  min-height: 80dvh; /* dvh adjusts automatically for mobile address bars */
+  min-height: 50dvh; /* dvh adjusts automatically for mobile address bars */
   position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
+  margin-top: 1rem;
   justify-content: center;
-  padding-top: 5rem;    /* Ensures spacing below fixed navbar */
-  padding-bottom: 3rem;
+  padding-top: 18rem;    /* Ensures spacing below fixed navbar */
+  padding-bottom: 5rem;
   background-color: #000;
 }
 
