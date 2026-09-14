@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid px-4">
@@ -68,13 +69,35 @@
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <div class="brand-container">
-      <a href="https://themaxsdeli.cloveronline.com/" target="_blank" class="flash-banner order-btn">
-        Browse Now
-      </a>
+  <!-- Video Background Hero Section -->
+  <header class="hero-header position-relative overflow-hidden text-center text-white d-flex align-items-center justify-content-center">
+    <video class="hero-video" autoplay loop playsinline poster="./img/Deli_Main_Banner.png">
+      <source src="./videos/deli-loop1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative z-3 py-5">
+      <span class="badge bg-danger text-white px-3 py-2 rounded-pill fw-bold text-uppercase mb-3">
+        Fresh Daily • Local Favorite Since 1980
+      </span>
+      <h1 class="display-3 fw-bold text-white mb-3">
+        Handcrafted Sandwiches & Hot Specials
+      </h1>
+      <!-- <p class="lead text-light mb-4 mx-auto" style="max-width: 700px;">
+        Crispy fries, 6-foot party subs, piled-high roast beef, hot sizzling breakfast, and fresh deli specials made every morning.
+      </p> -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="https://themaxsdeli.cloveronline.com/menu/all" target="_blank" class="btn btn-danger btn-lg rounded-pill px-4 fw-bold shadow">
+          <i class="fas fa-shopping-cart me-2"></i> Order Online
+        </a>
+        <a href="./dailySpecial.html" class="btn btn-outline-light btn-lg rounded-pill px-4 fw-bold">
+          <i class="fas fa-star me-2"></i> View Today's Specials
+        </a>
+      </div>
     </div>
-  </div>
+  </header>
 
   <hr />
 
