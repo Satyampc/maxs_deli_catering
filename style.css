@@ -1425,8 +1425,14 @@ position: fixed;
 }
 
 .hero-header {
-  min-height: 80vh;
-  margin-top: 70px; /* Accounts for fixed navbar */
+  min-height: 80dvh; /* dvh adjusts automatically for mobile address bars */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;    /* Ensures spacing below fixed navbar */
+  padding-bottom: 3rem;
   background-color: #000;
 }
 
@@ -1441,6 +1447,7 @@ position: fixed;
   z-index: 1;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  object-position: center center; /* Keeps the action centered */
 }
 
 .hero-overlay {
@@ -1451,6 +1458,17 @@ position: fixed;
   /* height: 100%; */
   background: rgba(0, 0, 0, 0.55);
   z-index: 2;
+}
+/* Scale down title size on mobile viewports */
+@media (max-width: 768px) {
+  .hero-header h1 {
+    font-size: 2rem !important; /* Prevents overflow on mobile screens */
+  }
+  
+  .hero-header .badge {
+    font-size: 0.75rem !important;
+    white-space: normal; /* Allows badge text to wrap cleanly if needed */
+  }
 }
 
 @media screen and (max-width: 768px) {
