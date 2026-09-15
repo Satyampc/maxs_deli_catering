@@ -1466,6 +1466,47 @@ position: fixed;
   z-index: 2;
 }
 
+.chef-notice {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #fff8e7;
+    border: 2px solid #d6a84f;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.chef-notice h2 {
+    margin: 0 0 15px;
+    font-size: 26px;
+    color: #333;
+}
+
+.chef-notice p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.chef-notice p + p {
+    margin-top: 15px;
+}
+
+.chef-notice .thank-you {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.chef-notice .signature {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
 /* Responsive adjustments for any phone screen sizes */
 @media (max-width: 768px) {
   .hero-header {
