@@ -103,7 +103,7 @@ p .fName,
   font-family: fantasy;
   text-decoration: underline;
 }
-
+/* 
 .jumbotron {
   background-image: url("./img/Deli_Main_Banner.png");
   background-size: cover;
@@ -116,14 +116,14 @@ p .fName,
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
+} */
 
-.jumbotron::before {
+/* .jumbotron::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, .20);
-}
+} */
 
 .test {
   background-image: url("./img/menuLanding.jpg");
@@ -1362,7 +1362,7 @@ position: fixed;
 }
 
 /* Media for Jumbotron */
-@media (max-width:768px) {
+/* @media (max-width:768px) {
 
   .jumbotron {
     min-height: 500px;
@@ -1378,7 +1378,7 @@ position: fixed;
   }
 
   .order-btn {
-    transform: translateY(40px); /* Lower shift for small screens */
+    transform: translateY(40px);
     width: 180px;
     padding: 12px 20px;
     font-size: .95rem;
@@ -1387,7 +1387,7 @@ position: fixed;
   .order-btn:hover {
     transform: translateY(38px);
   }
-}
+} */
 
 .special-image {
   width: 250px;
