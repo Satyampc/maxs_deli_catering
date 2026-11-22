@@ -1507,6 +1507,122 @@ position: fixed;
     color: #666;
 }
 
+/* Thanksgiving Jumbotron Styling */
+.thanksgiving-jumbotron {
+  /* Replace URL below with your own ./img/thanksgiving-banner.jpg once uploaded */
+  background: linear-gradient(rgba(30, 15, 5, 0.65), rgba(30, 15, 5, 0.72)),
+              url('https://images.unsplash.com/photo-1574672280600-4accfa5b6f98?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  min-height: 460px;
+  margin-top: 74px; /* Offsets fixed-top navbar */
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.thanksgiving-card {
+  background-color: #fffdf9;
+  border: 2px solid #d4a373;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.thanksgiving-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(139, 69, 19, 0.15) !important;
+}
+
+.thanksgiving-accent {
+  color: #8b4513;
+}
+
+.thanksgiving-badge {
+  background-color: #b85d19;
+  color: #fff;
+}
+
+.flying-turkey {
+  position: fixed;
+  top: 25%;
+  left: -90px;
+  font-size: 3rem;
+  z-index: 1050;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(3px 5px 6px rgba(0, 0, 0, 0.45));
+  animation: flySwoop 12s ease-in-out infinite;
+}
+
+.turkey-1 {
+  animation-duration: 13s;
+  animation-delay: 0s;
+  font-size: 3.1rem;
+}
+
+.turkey-2 {
+  animation-name: flySwoopHigh;
+  animation-duration: 15s;
+  animation-delay: 3.5s;
+  font-size: 2.3rem;
+}
+
+.turkey-3 {
+  animation-name: flySwoopLow;
+  animation-duration: 11s;
+  animation-delay: 7s;
+  font-size: 2.7rem;
+}
+
+.turkey-4 {
+  animation-duration: 14s;
+  animation-delay: 9.5s;
+  font-size: 2rem;
+}
+
+/* Main Swoop Path */
+@keyframes flySwoop {
+  0%   { left: -90px; top: 35%; transform: rotate(-15deg) scaleX(-1); }
+  25%  { left: 25%;   top: 12%; transform: rotate(10deg)  scaleX(-1); }
+  50%  { left: 55%;   top: 52%; transform: rotate(-18deg) scaleX(-1); }
+  75%  { left: 80%;   top: 18%; transform: rotate(12deg)  scaleX(-1); }
+  100% { left: 110%;  top: 40%; transform: rotate(-5deg)  scaleX(-1); }
+}
+
+/* Higher Swoop Path */
+@keyframes flySwoopHigh {
+  0%   { left: -90px; top: 15%; transform: rotate(-10deg) scaleX(-1); }
+  30%  { left: 32%;   top: 32%; transform: rotate(12deg)  scaleX(-1); }
+  65%  { left: 68%;   top: 8%;  transform: rotate(-14deg) scaleX(-1); }
+  100% { left: 110%;  top: 22%; transform: rotate(5deg)   scaleX(-1); }
+}
+
+/* Lower Swoop Path */
+@keyframes flySwoopLow {
+  0%   { left: -90px; top: 65%; transform: rotate(12deg)  scaleX(-1); }
+  35%  { left: 38%;   top: 35%; transform: rotate(-12deg) scaleX(-1); }
+  70%  { left: 72%;   top: 68%; transform: rotate(15deg)  scaleX(-1); }
+  100% { left: 110%;  top: 48%; transform: rotate(-5deg)  scaleX(-1); }
+}
+
+@keyframes flyAcross {
+  0% {
+    left: -80px;
+    transform: translateY(0px) rotate(5deg) scaleX(-1); /* Faces right */
+  }
+  25% {
+    transform: translateY(-20px) rotate(-5deg) scaleX(-1);
+  }
+  50% {
+    transform: translateY(10px) rotate(5deg) scaleX(-1);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-5deg) scaleX(-1);
+  }
+  100% {
+    left: 110%;
+    transform: translateY(0px) rotate(5deg) scaleX(-1);
+  }
+}
+
 /* Responsive adjustments for any phone screen sizes */
 @media (max-width: 768px) {
   .hero-header {
