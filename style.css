@@ -1558,6 +1558,29 @@ position: fixed;
   font-size: 3.1rem;
 }
 
+/* Temp Church Add */
+.community-flyer-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.flyer-wrapper {
+  max-width: 480px; /* Keeps the flyer crisp on desktop without getting oversized */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e6dcc8;
+  background-color: #ffffff;
+}
+
+.flyer-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Temp Church Add */
+
 .turkey-2 {
   animation-name: flySwoopHigh;
   animation-duration: 15s;
@@ -1584,6 +1607,8 @@ position: fixed;
     font-style: italic;
     margin-top: 5px;
 }
+
+
 
 /* Main Swoop Path */
 @keyframes flySwoop {
